@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reflejos — Exposición Fotográfica Multimodal</title>
+
+    <!-- SEO -->
+    <meta name="description" content="Portafolio fotográfico interactivo del INEM de Cali. Exploración visual a través de la fotografía paisajística, de moda y de prensa. Universidad del Tolima.">
+    <meta name="author" content="Aura María Salamanca, Luisa Camila Giraldo, Maby Calambas">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400;1,700&family=DM+Sans:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400&display=swap" rel="stylesheet">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+
+    <!-- Golden floating particles -->
+    <canvas id="particleCanvas" aria-hidden="true"></canvas>
+
+    <!-- Ambient background gradients -->
+    <div class="ambient-bg" aria-hidden="true"></div>
+
+    <!-- ============================================ -->
+    <!-- NAVIGATION                                    -->
+    <!-- ============================================ -->
+    <nav class="main-nav" id="mainNav">
+        <div class="nav-inner">
+            <a href="#hero" class="nav-logo">
+                Reflejos<span class="nav-dot"></span>
+            </a>
+            <div class="nav-links" id="navLinks">
+                <a href="#paisajistica" data-sala="01">Paisajística</a>
+                <a href="#moda" data-sala="02">Moda</a>
+                <a href="#prensa" data-sala="03">Prensa</a>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <!-- ============================================ -->
+        <!-- HERO: Cinematic Full-Screen Entrance          -->
+        <!-- ============================================ -->
+        <section class="hero" id="hero">
+            <div class="hero-bg" aria-hidden="true"></div>
+            <div class="hero-overlay" aria-hidden="true"></div>
+            <div class="hero-vignette" aria-hidden="true"></div>
+
+            <div class="hero-content">
+                <div class="hero-badge anim-hero" data-delay="1">
+                    <span class="gold-line-h"></span>
+                    <span>Exposición Fotográfica</span>
+                    <span class="gold-line-h"></span>
+                </div>
+                <h1 class="hero-title">
+                    <span class="title-line anim-hero" data-delay="2">La Mirada</span>
+                    <span class="title-line title-accent anim-hero" data-delay="3">Multimodal</span>
+                </h1>
+                <p class="hero-tagline anim-hero" data-delay="4">
+                    <em>Intenciones del Espacio</em>
+                </p>
+            </div>
+
+            <div class="scroll-cue anim-hero" data-delay="5">
+                <span>Explorar</span>
+                <div class="scroll-arrow">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M12 5v14"></path>
+                        <path d="M5 12l7 7 7-7"></path>
+                    </svg>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============================================ -->
+        <!-- STATEMENT: Artistic Manifesto                 -->
+        <!-- ============================================ -->
+        <section class="statement" id="statement">
+            <div class="container-narrow">
+                <div class="ornament reveal">✦</div>
+                <p class="statement-text reveal">
+                    Una exploración fotográfica en el contexto del <strong>INEM de Cali</strong>,
+                    resignificando la cotidianidad a través de la fotografía paisajística, de moda y de prensa.
+                    Cada captura trasciende la imagen cruda mediante una postproducción deliberada
+                    que acentúa la intención artística y el mensaje visual.
+                </p>
+                <div class="ornament reveal">✦</div>
+            </div>
+        </section>
+
+        <!-- ============================================ -->
+        <!-- PROJECT INFO: Institutional Data              -->
+        <!-- ============================================ -->
+        <section class="project-info" id="projectInfo">
+            <div class="container">
+                <div class="info-grid">
+                    <div class="info-card reveal">
+                        <span class="info-label">Institución</span>
+                        <span class="info-value">Universidad del Tolima</span>
+                    </div>
+                    <div class="info-card reveal">
+                        <span class="info-label">Programa</span>
+                        <span class="info-value">Lic. en Literatura y Lengua Castellana</span>
+                    </div>
+                    <div class="info-card reveal">
+                        <span class="info-label">Curso &amp; Docente</span>
+                        <span class="info-value">
+                            Multimodalidad y Medios de Comunicación<br>
+                            <span class="gold-text">Doc. Lina Fernanda Meza</span>
+                        </span>
+                    </div>
+                    <div class="info-card reveal">
+                        <span class="info-label">Estudiantes</span>
+                        <span class="info-value">
+                            Aura María Salamanca<br>
+                            Luisa Camila Giraldo<br>
+                            Maby Calambas
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Ornamental Divider -->
+        <div class="sala-divider reveal" aria-hidden="true">
+            <span class="divider-line"></span>
+            <span class="divider-ornament">◆</span>
+            <span class="divider-line"></span>
+        </div>
+
+        <!-- ============================================ -->
+        <!-- SALA 01: Paisajística                         -->
+        <!-- ============================================ -->
+        <section class="sala" id="paisajistica">
+            <div class="container">
+                <div class="sala-header reveal">
+                    <span class="sala-number">Sala 01</span>
+                    <h2 class="sala-title">Paisajística</h2>
+                    <div class="gold-divider"></div>
+                    <p class="sala-desc">Exploración del paisaje natural y arquitectónico del INEM. La cámara captura senderos, claroscuros, fauna y la atmósfera que envuelve la cotidianidad del campus.</p>
+                </div>
+                <div class="photo-grid" id="gallery-paisajistica">
+                    <!-- Rendered by JS -->
+                </div>
+            </div>
+        </section>
+
+        <!-- Ornamental Divider -->
+        <div class="sala-divider reveal" aria-hidden="true">
+            <span class="divider-line"></span>
+            <span class="divider-ornament">◆</span>
+            <span class="divider-line"></span>
+        </div>
+
+        <!-- ============================================ -->
+        <!-- SALA 02: Moda                                 -->
+        <!-- ============================================ -->
+        <section class="sala" id="moda">
+            <div class="container">
+                <div class="sala-header reveal">
+                    <span class="sala-number">Sala 02</span>
+                    <h2 class="sala-title">Moda</h2>
+                    <div class="gold-divider"></div>
+                    <p class="sala-desc">Retrato editorial y fotografía de accesorios. La intención estética se fusiona con el estilo juvenil y la identidad visual del estudiante contemporáneo.</p>
+                </div>
+                <div class="photo-grid photo-grid--moda" id="gallery-moda">
+                    <!-- Rendered by JS -->
+                </div>
+            </div>
+        </section>
+
+        <!-- Ornamental Divider -->
+        <div class="sala-divider reveal" aria-hidden="true">
+            <span class="divider-line"></span>
+            <span class="divider-ornament">◆</span>
+            <span class="divider-line"></span>
+        </div>
+
+        <!-- ============================================ -->
+        <!-- SALA 03: Prensa                               -->
+        <!-- ============================================ -->
+        <section class="sala" id="prensa">
+            <div class="container">
+                <div class="sala-header reveal">
+                    <span class="sala-number">Sala 03</span>
+                    <h2 class="sala-title">Prensa</h2>
+                    <div class="gold-divider"></div>
+                    <p class="sala-desc">Fotorreportaje documental y crónica visual. La cámara como testigo del día a día escolar: simulacros, pasillos, aulas y la huella de los estudiantes en su entorno.</p>
+                </div>
+                <div class="photo-grid" id="gallery-prensa">
+                    <!-- Rendered by JS -->
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- ============================================ -->
+    <!-- LIGHTBOX: Premium Photo Viewer                -->
+    <!-- ============================================ -->
+    <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-hidden="true">
+        <div class="lightbox-backdrop" id="lightboxBackdrop"></div>
+        <div class="lightbox-panel">
+            <button class="lightbox-close" id="lightboxClose" aria-label="Cerrar visualizador">
+                <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
+                    <line x1="18" y1="6" x2="6" y2="18"></line>
+                    <line x1="6" y1="6" x2="18" y2="18"></line>
+                </svg>
+            </button>
+
+            <!-- Image / Before-After Slider area -->
+            <div class="lightbox-media" id="lightboxMedia"></div>
+
+            <!-- Technical data sheet sidebar -->
+            <div class="lightbox-info">
+                <div class="lightbox-info-top">
+                    <h2 class="lb-title" id="lbTitle">Título de la Obra</h2>
+                    <div class="lb-sheet">
+                        <div class="lb-field">
+                            <span class="lb-label">Categoría Exigida</span>
+                            <span class="lb-value" id="lbCategory"></span>
+                        </div>
+                        <div class="lb-field">
+                            <span class="lb-label">Plano Fotográfico</span>
+                            <span class="lb-value" id="lbPlano"></span>
+                        </div>
+                        <div class="lb-field">
+                            <span class="lb-label">Regla de Composición</span>
+                            <span class="lb-value" id="lbComposicion"></span>
+                        </div>
+                        <div class="lb-field lb-field--intention">
+                            <span class="lb-label">Intención Artística &amp; Multimodal</span>
+                            <span class="lb-value lb-value--body" id="lbIntencion"></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="lb-footer">
+                    <span class="lb-footer-dot"></span>
+                    Exposición Académica UT · 2026
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ============================================ -->
+    <!-- FOOTER                                        -->
+    <!-- ============================================ -->
+    <footer class="main-footer">
+        <div class="container">
+            <div class="footer-brand">
+                Reflejos<span class="nav-dot"></span>
+            </div>
+            <p class="footer-copy">
+                &copy; 2026 Colectivo de Estudiantes · Lic. en Literatura y Lengua Castellana<br>
+                Multimodalidad y Medios de Comunicación · Universidad del Tolima
+            </p>
+        </div>
+    </footer>
+
+    <!-- App Logic -->
+    <script src="app.js"></script>
+</body>
+</html>

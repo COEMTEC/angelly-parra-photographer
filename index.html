@@ -3,262 +3,355 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Reflejos — Exposición Fotográfica Multimodal</title>
+    <title>Angelly Parra — Photographer · Castellón, Spain</title>
 
     <!-- SEO -->
-    <meta name="description" content="Portafolio fotográfico interactivo del INEM de Cali. Exploración visual a través de la fotografía paisajística, de moda y de prensa. Universidad del Tolima.">
-    <meta name="author" content="Aura María Salamanca, Luisa Camila Giraldo, Maby Calambas">
+    <meta name="description" content="Angelly Parra — Fotógrafa profesional en Castellón, España. Especializada en bodas, eventos, fotografía de marca y retratos. Capturando momentos que duran para siempre.">
+    <meta name="author" content="Angelly Parra">
+    <meta name="keywords" content="photographer, Castellón, Spain, weddings, events, portraits, brand photography, fotógrafa">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Angelly Parra — Photographer">
+    <meta property="og:description" content="Fotógrafa profesional en Castellón, España. Especializada en bodas, eventos, marcas y retratos.">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="es_ES">
 
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400;1,700&family=DM+Sans:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,700&family=DM+Sans:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400&display=swap" rel="stylesheet">
 
     <!-- Styles -->
     <link rel="stylesheet" href="index.css">
 </head>
 <body>
 
-    <!-- Golden floating particles -->
+    <!-- ═══════════════════════════════════════════════ -->
+    <!-- PRELOADER                                       -->
+    <!-- ═══════════════════════════════════════════════ -->
+    <div class="preloader" id="preloader">
+        <div class="preloader-logo">AP</div>
+        <div class="preloader-bar-track">
+            <div class="preloader-bar-fill" id="preloaderBar"></div>
+        </div>
+        <div class="preloader-counter" id="preloaderCounter">0%</div>
+    </div>
+
+    <!-- ═══════════════════════════════════════════════ -->
+    <!-- CUSTOM CURSOR                                   -->
+    <!-- ═══════════════════════════════════════════════ -->
+    <div class="cursor-dot" id="cursorDot"></div>
+    <div class="cursor-follower" id="cursorFollower">
+        <span class="cursor-follower-text" id="cursorText" data-i18n="cursor_view">Ver</span>
+    </div>
+
+    <!-- ═══════════════════════════════════════════════ -->
+    <!-- GOLDEN PARTICLES                                -->
+    <!-- ═══════════════════════════════════════════════ -->
     <canvas id="particleCanvas" aria-hidden="true"></canvas>
 
-    <!-- Ambient background gradients -->
-    <div class="ambient-bg" aria-hidden="true"></div>
-
-    <!-- ============================================ -->
-    <!-- NAVIGATION                                    -->
-    <!-- ============================================ -->
-    <nav class="main-nav" id="mainNav">
-        <div class="nav-inner">
-            <a href="#hero" class="nav-logo">
-                Reflejos<span class="nav-dot"></span>
-            </a>
-            <div class="nav-links" id="navLinks">
-                <a href="#paisajistica" data-sala="01">Paisajística</a>
-                <a href="#moda" data-sala="02">Moda</a>
-                <a href="#prensa" data-sala="03">Prensa</a>
+    <!-- ═══════════════════════════════════════════════ -->
+    <!-- HEADER                                          -->
+    <!-- ═══════════════════════════════════════════════ -->
+    <header class="header" id="header">
+        <div class="header-inner">
+            <a href="#" class="header-logo" data-cursor="link">Angelly Parra</a>
+            <div class="header-actions">
+                <nav class="header-nav-links" id="desktopNav">
+                    <a href="#work" data-cursor="link" data-i18n="nav_work">Portafolio</a>
+                    <a href="#about" data-cursor="link" data-i18n="nav_about">Sobre Mí</a>
+                    <a href="#services" data-cursor="link" data-i18n="nav_services">Servicios</a>
+                    <a href="#contact" data-cursor="link" data-i18n="nav_contact">Contacto</a>
+                </nav>
+                <div class="lang-switch">
+                    <button class="lang-btn active" data-lang="es" data-cursor="link">ES</button>
+                    <span class="lang-sep">/</span>
+                    <button class="lang-btn" data-lang="en" data-cursor="link">EN</button>
+                </div>
+                <button class="hamburger" id="hamburger" aria-label="Open menu" data-cursor="link">
+                    <span></span>
+                    <span></span>
+                </button>
             </div>
         </div>
-    </nav>
+    </header>
 
+    <!-- ═══════════════════════════════════════════════ -->
+    <!-- NAV OVERLAY (Mobile)                            -->
+    <!-- ═══════════════════════════════════════════════ -->
+    <div class="nav-overlay" id="navOverlay">
+        <div class="nav-overlay-content">
+            <a href="#work" class="nav-overlay-link" data-cursor="link" data-i18n="nav_work">Portafolio</a>
+            <a href="#about" class="nav-overlay-link" data-cursor="link" data-i18n="nav_about">Sobre Mí</a>
+            <a href="#services" class="nav-overlay-link" data-cursor="link" data-i18n="nav_services">Servicios</a>
+            <a href="#contact" class="nav-overlay-link" data-cursor="link" data-i18n="nav_contact">Contacto</a>
+        </div>
+        <div class="nav-overlay-footer">
+            <a href="https://instagram.com" target="_blank" rel="noopener">Instagram</a>
+            <a href="mailto:hello@angellyparra.com">Email</a>
+        </div>
+    </div>
+
+    <!-- ═══════════════════════════════════════════════ -->
+    <!-- MAIN CONTENT                                    -->
+    <!-- ═══════════════════════════════════════════════ -->
     <main>
-        <!-- ============================================ -->
-        <!-- HERO: Cinematic Full-Screen Entrance          -->
-        <!-- ============================================ -->
+
+        <!-- ─── HERO ─────────────────────────────────── -->
         <section class="hero" id="hero">
-            <div class="hero-bg" aria-hidden="true"></div>
+            <div class="hero-bg">
+                <img src="https://images.unsplash.com/photo-1519741497674-611481863552?w=1920&q=80" alt="Wedding photography by Angelly Parra" id="heroBgImg">
+            </div>
             <div class="hero-overlay" aria-hidden="true"></div>
-            <div class="hero-vignette" aria-hidden="true"></div>
+            <div class="hero-grain" aria-hidden="true"></div>
 
             <div class="hero-content">
-                <div class="hero-badge anim-hero" data-delay="1">
-                    <span class="gold-line-h"></span>
-                    <span>Exposición Fotográfica</span>
-                    <span class="gold-line-h"></span>
-                </div>
-                <h1 class="hero-title">
-                    <span class="title-line anim-hero" data-delay="2">La Mirada</span>
-                    <span class="title-line title-accent anim-hero" data-delay="3">Multimodal</span>
+                <p class="hero-subtitle" id="heroSubtitle" data-i18n="hero_subtitle">Fotógrafa · Castellón, España</p>
+                <h1 class="hero-title" id="heroTitle">
+                    <span class="line"><span>Angelly</span></span>
+                    <span class="line accent"><span>Parra</span></span>
                 </h1>
-                <p class="hero-tagline anim-hero" data-delay="4">
-                    <em>Intenciones del Espacio</em>
-                </p>
+                <p class="hero-tagline" id="heroTagline" data-i18n="hero_tagline">Capturando momentos que duran para siempre</p>
             </div>
 
-            <div class="scroll-cue anim-hero" data-delay="5">
-                <span>Explorar</span>
-                <div class="scroll-arrow">
-                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-                        <path d="M12 5v14"></path>
-                        <path d="M5 12l7 7 7-7"></path>
-                    </svg>
-                </div>
+            <div class="hero-scroll" id="heroScroll">
+                <span class="hero-scroll-text" data-i18n="scroll">Desliza</span>
+                <div class="hero-scroll-line"></div>
             </div>
         </section>
 
-        <!-- ============================================ -->
-        <!-- STATEMENT: Artistic Manifesto                 -->
-        <!-- ============================================ -->
-        <section class="statement" id="statement">
-            <div class="container-narrow">
-                <div class="ornament reveal">✦</div>
-                <p class="statement-text reveal">
-                    Una exploración fotográfica en el contexto del <strong>INEM de Cali</strong>,
-                    resignificando la cotidianidad a través de la fotografía paisajística, de moda y de prensa.
-                    Cada captura trasciende la imagen cruda mediante una postproducción deliberada
-                    que acentúa la intención artística y el mensaje visual.
-                </p>
-                <div class="ornament reveal">✦</div>
+        <!-- ─── MARQUEE ──────────────────────────────── -->
+        <div class="marquee" aria-hidden="true">
+            <div class="marquee-track">
+                <div class="marquee-item"><span data-i18n="marq_weddings">Bodas</span> <span class="marquee-dot"></span></div>
+                <div class="marquee-item"><span data-i18n="marq_events">Eventos</span> <span class="marquee-dot"></span></div>
+                <div class="marquee-item"><span data-i18n="marq_brands">Marcas</span> <span class="marquee-dot"></span></div>
+                <div class="marquee-item"><span data-i18n="marq_portraits">Retratos</span> <span class="marquee-dot"></span></div>
+                <div class="marquee-item"><span data-i18n="marq_love">Historias de Amor</span> <span class="marquee-dot"></span></div>
+                <div class="marquee-item"><span data-i18n="marq_celebrations">Celebraciones</span> <span class="marquee-dot"></span></div>
+                <div class="marquee-item"><span data-i18n="marq_editorial">Editorial</span> <span class="marquee-dot"></span></div>
+                <div class="marquee-item"><span data-i18n="marq_lifestyle">Estilo de Vida</span> <span class="marquee-dot"></span></div>
+                <!-- Duplicate for seamless loop -->
+                <div class="marquee-item"><span data-i18n="marq_weddings">Bodas</span> <span class="marquee-dot"></span></div>
+                <div class="marquee-item"><span data-i18n="marq_events">Eventos</span> <span class="marquee-dot"></span></div>
+                <div class="marquee-item"><span data-i18n="marq_brands">Marcas</span> <span class="marquee-dot"></span></div>
+                <div class="marquee-item"><span data-i18n="marq_portraits">Retratos</span> <span class="marquee-dot"></span></div>
+                <div class="marquee-item"><span data-i18n="marq_love">Historias de Amor</span> <span class="marquee-dot"></span></div>
+                <div class="marquee-item"><span data-i18n="marq_celebrations">Celebraciones</span> <span class="marquee-dot"></span></div>
+                <div class="marquee-item"><span data-i18n="marq_editorial">Editorial</span> <span class="marquee-dot"></span></div>
+                <div class="marquee-item"><span data-i18n="marq_lifestyle">Estilo de Vida</span> <span class="marquee-dot"></span></div>
             </div>
-        </section>
-
-        <!-- ============================================ -->
-        <!-- PROJECT INFO: Institutional Data              -->
-        <!-- ============================================ -->
-        <section class="project-info" id="projectInfo">
-            <div class="container">
-                <div class="info-grid">
-                    <div class="info-card reveal">
-                        <span class="info-label">Institución</span>
-                        <span class="info-value">Universidad del Tolima</span>
-                    </div>
-                    <div class="info-card reveal">
-                        <span class="info-label">Programa</span>
-                        <span class="info-value">Lic. en Literatura y Lengua Castellana</span>
-                    </div>
-                    <div class="info-card reveal">
-                        <span class="info-label">Curso &amp; Docente</span>
-                        <span class="info-value">
-                            Multimodalidad y Medios de Comunicación<br>
-                            <span class="gold-text">Doc. Lina Fernanda Meza</span>
-                        </span>
-                    </div>
-                    <div class="info-card reveal">
-                        <span class="info-label">Estudiantes</span>
-                        <span class="info-value">
-                            Aura María Salamanca<br>
-                            Luisa Camila Giraldo<br>
-                            Maby Calambas
-                        </span>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Ornamental Divider -->
-        <div class="sala-divider reveal" aria-hidden="true">
-            <span class="divider-line"></span>
-            <span class="divider-ornament">◆</span>
-            <span class="divider-line"></span>
         </div>
 
-        <!-- ============================================ -->
-        <!-- SALA 01: Paisajística                         -->
-        <!-- ============================================ -->
-        <section class="sala" id="paisajistica">
+        <!-- ─── PORTFOLIO ────────────────────────────── -->
+        <section class="portfolio" id="work">
             <div class="container">
-                <div class="sala-header reveal">
-                    <span class="sala-number">Sala 01</span>
-                    <h2 class="sala-title">Paisajística</h2>
-                    <div class="gold-divider"></div>
-                    <p class="sala-desc">Exploración del paisaje natural y arquitectónico del INEM. La cámara captura senderos, claroscuros, fauna y la atmósfera que envuelve la cotidianidad del campus.</p>
+                <div class="section-header reveal-up">
+                    <span class="section-label" data-i18n="nav_work">Portafolio</span>
+                    <h2 class="section-title" data-i18n="portfolio_title">Trabajo Destacado</h2>
                 </div>
-                <div class="photo-grid" id="gallery-paisajistica">
+
+                <div class="portfolio-filters reveal-up" id="portfolioFilters">
+                    <button class="portfolio-filter-btn active" data-filter="all" data-cursor="link" data-i18n="filter_all">Todos</button>
+                    <button class="portfolio-filter-btn" data-filter="weddings" data-cursor="link" data-i18n="filter_weddings">Bodas</button>
+                    <button class="portfolio-filter-btn" data-filter="events" data-cursor="link" data-i18n="filter_events">Eventos</button>
+                    <button class="portfolio-filter-btn" data-filter="brands" data-cursor="link" data-i18n="filter_brands">Marcas</button>
+                    <button class="portfolio-filter-btn" data-filter="portraits" data-cursor="link" data-i18n="filter_portraits">Retratos</button>
+                </div>
+
+                <div class="portfolio-grid" id="portfolioGrid">
                     <!-- Rendered by JS -->
                 </div>
             </div>
         </section>
 
-        <!-- Ornamental Divider -->
-        <div class="sala-divider reveal" aria-hidden="true">
-            <span class="divider-line"></span>
-            <span class="divider-ornament">◆</span>
-            <span class="divider-line"></span>
-        </div>
-
-        <!-- ============================================ -->
-        <!-- SALA 02: Moda                                 -->
-        <!-- ============================================ -->
-        <section class="sala" id="moda">
+        <!-- ─── ABOUT ────────────────────────────────── -->
+        <section class="about" id="about">
             <div class="container">
-                <div class="sala-header reveal">
-                    <span class="sala-number">Sala 02</span>
-                    <h2 class="sala-title">Moda</h2>
-                    <div class="gold-divider"></div>
-                    <p class="sala-desc">Retrato editorial y fotografía de accesorios. La intención estética se fusiona con el estilo juvenil y la identidad visual del estudiante contemporáneo.</p>
-                </div>
-                <div class="photo-grid photo-grid--moda" id="gallery-moda">
-                    <!-- Rendered by JS -->
+                <div class="about-grid">
+                    <div class="about-image-wrap reveal-scale">
+                        <img src="https://images.unsplash.com/photo-1554048612-b6a482bc67e5?w=800&h=1000&fit=crop&q=80"
+                             alt="Angelly Parra — Photographer portrait">
+                        <div class="about-image-accent" aria-hidden="true"></div>
+                    </div>
+                    <div class="about-content">
+                        <div class="reveal-up">
+                            <span class="section-label" data-i18n="nav_about">Sobre Mí</span>
+                            <h2 class="section-title" data-i18n="about_title">La Historia Detrás<br>del Lente</h2>
+                        </div>
+                        <p class="about-text reveal-up" data-i18n="about_text">
+                            Hola, soy <strong>Angelly Parra</strong>, una apasionada fotógrafa radicada en 
+                            <strong>Castellón, España</strong>. Me especializo en capturar los momentos más significativos de la vida — desde las emociones íntimas del día de una boda hasta la energía vibrante de celebraciones y eventos.<br><br>
+                            Cada fotografía que tomo está impulsada por el deseo de contar historias auténticas a través de la luz, la composición y la emoción genuina. Ya sea una marca buscando identidad visual o una pareja queriendo preservar su historia de amor, aporto dedicación, creatividad y un buen ojo para los detalles en cada sesión.
+                        </p>
+                        <div class="about-stats reveal-up">
+                            <div class="about-stat">
+                                <div class="about-stat-number" data-count="500">0</div>
+                                <div class="about-stat-label" data-i18n="stat_sessions">Sesiones</div>
+                            </div>
+                            <div class="about-stat">
+                                <div class="about-stat-number" data-count="50">0</div>
+                                <div class="about-stat-label" data-i18n="stat_weddings">Bodas</div>
+                            </div>
+                            <div class="about-stat">
+                                <div class="about-stat-number" data-count="100">0</div>
+                                <div class="about-stat-label" data-i18n="stat_clients">Clientes Felices</div>
+                            </div>
+                            <div class="about-stat">
+                                <div class="about-stat-number" data-count="100">0</div>
+                                <div class="about-stat-label" data-i18n="stat_passion">Pasión</div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
 
-        <!-- Ornamental Divider -->
-        <div class="sala-divider reveal" aria-hidden="true">
-            <span class="divider-line"></span>
-            <span class="divider-ornament">◆</span>
-            <span class="divider-line"></span>
-        </div>
-
-        <!-- ============================================ -->
-        <!-- SALA 03: Prensa                               -->
-        <!-- ============================================ -->
-        <section class="sala" id="prensa">
+        <!-- ─── SERVICES ─────────────────────────────── -->
+        <section class="services" id="services">
             <div class="container">
-                <div class="sala-header reveal">
-                    <span class="sala-number">Sala 03</span>
-                    <h2 class="sala-title">Prensa</h2>
-                    <div class="gold-divider"></div>
-                    <p class="sala-desc">Fotorreportaje documental y crónica visual. La cámara como testigo del día a día escolar: simulacros, pasillos, aulas y la huella de los estudiantes en su entorno.</p>
+                <div class="section-header reveal-up">
+                    <span class="section-label" data-i18n="nav_services">Servicios</span>
+                    <h2 class="section-title" data-i18n="services_title">Lo que Ofrezco</h2>
                 </div>
-                <div class="photo-grid" id="gallery-prensa">
-                    <!-- Rendered by JS -->
+
+                <div class="services-grid">
+                    <div class="service-card reveal-up" data-cursor="link">
+                        <div class="service-card-number">01</div>
+                        <h3 class="service-card-title" data-i18n="srv_weddings_title">Fotografía de Bodas</h3>
+                        <p class="service-card-desc" data-i18n="srv_weddings_desc">Cobertura completa de tu día especial. Desde los preparativos hasta el último baile — cada emoción y detalle bellamente preservado.</p>
+                    </div>
+                    <div class="service-card reveal-up" data-cursor="link">
+                        <div class="service-card-number">02</div>
+                        <h3 class="service-card-title" data-i18n="srv_events_title">Eventos y Celebraciones</h3>
+                        <p class="service-card-desc" data-i18n="srv_events_desc">Cumpleaños, reuniones corporativas, galas y fiestas. Capturo el ambiente, la gente y la energía que hace cada evento único.</p>
+                    </div>
+                    <div class="service-card reveal-up" data-cursor="link">
+                        <div class="service-card-number">03</div>
+                        <h3 class="service-card-title" data-i18n="srv_brands_title">Marcas y Productos</h3>
+                        <p class="service-card-desc" data-i18n="srv_brands_desc">Narrativa visual para marcas. Sesiones de producto, estilo de vida y creación de contenido que eleva tu identidad visual.</p>
+                    </div>
+                    <div class="service-card reveal-up" data-cursor="link">
+                        <div class="service-card-number">04</div>
+                        <h3 class="service-card-title" data-i18n="srv_portraits_title">Sesiones de Retrato</h3>
+                        <p class="service-card-desc" data-i18n="srv_portraits_desc">Retratos profesionales, editoriales creativos y sesiones de marca personal. Adaptados para revelar tu auténtica personalidad.</p>
+                    </div>
                 </div>
             </div>
         </section>
+
+        <!-- ─── TESTIMONIAL ──────────────────────────── -->
+        <section class="testimonials">
+            <div class="container">
+                <div class="testimonial-card reveal-up">
+                    <p class="testimonial-quote" data-i18n="testimonial_quote">Angelly capturó nuestro día de bodas con muchísima emoción y arte. Cada foto se siente como revivir los momentos más hermosos de nuestras vidas. Tiene un talento increíble para encontrar la luz y el ángulo perfecto.</p>
+                    <p class="testimonial-author">Elena & Marco</p>
+                    <p class="testimonial-role" data-i18n="testimonial_role">Boda · Castellón, 2024</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- ─── CONTACT CTA ──────────────────────────── -->
+        <section class="contact-cta" id="contact">
+            <div class="container">
+                <p class="contact-cta-label reveal-up" data-i18n="contact_label">Ponte en Contacto</p>
+                <h2 class="contact-cta-title reveal-up" data-i18n="contact_title">
+                    Vamos a Crear Algo<br><em>Hermoso</em> Juntos
+                </h2>
+                <a href="mailto:hello@angellyparra.com" class="contact-btn reveal-up" data-cursor="link" data-magnetic>
+                    <span data-i18n="contact_btn">Reserva una Sesión</span>
+                    <span class="contact-btn-arrow">→</span>
+                </a>
+                <div class="contact-info-row reveal-up">
+                    <a href="mailto:hello@angellyparra.com" class="contact-info-item" data-cursor="link">
+                        <span data-i18n="contact_email">Correo Electrónico</span>
+                        hello@angellyparra.com
+                    </a>
+                    <a href="https://instagram.com" target="_blank" rel="noopener" class="contact-info-item" data-cursor="link">
+                        <span>Instagram</span>
+                        @angellyparra
+                    </a>
+                    <div class="contact-info-item">
+                        <span data-i18n="contact_based">Ubicada en</span>
+                        Castellón, España
+                    </div>
+                </div>
+            </div>
+        </section>
+
     </main>
 
-    <!-- ============================================ -->
-    <!-- LIGHTBOX: Premium Photo Viewer                -->
-    <!-- ============================================ -->
+    <!-- ═══════════════════════════════════════════════ -->
+    <!-- FOOTER                                          -->
+    <!-- ═══════════════════════════════════════════════ -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-inner">
+                <div class="footer-brand">
+                    <strong>Angelly Parra</strong> · <span data-i18n="footer_brand">Fotógrafa</span>
+                </div>
+                <div class="footer-social">
+                    <a href="https://instagram.com" target="_blank" rel="noopener" data-cursor="link">Instagram</a>
+                    <a href="https://tiktok.com" target="_blank" rel="noopener" data-cursor="link">TikTok</a>
+                    <a href="https://wa.me/" target="_blank" rel="noopener" data-cursor="link">WhatsApp</a>
+                </div>
+                <p class="footer-copy"><span data-i18n="footer_copy">&copy; 2026 Angelly Parra Photography. Todos los derechos reservados.</span></p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ═══════════════════════════════════════════════ -->
+    <!-- LIGHTBOX                                        -->
+    <!-- ═══════════════════════════════════════════════ -->
     <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-hidden="true">
         <div class="lightbox-backdrop" id="lightboxBackdrop"></div>
-        <div class="lightbox-panel">
-            <button class="lightbox-close" id="lightboxClose" aria-label="Cerrar visualizador">
-                <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
-                    <line x1="18" y1="6" x2="6" y2="18"></line>
-                    <line x1="6" y1="6" x2="18" y2="18"></line>
-                </svg>
-            </button>
-
-            <!-- Image / Before-After Slider area -->
-            <div class="lightbox-media" id="lightboxMedia"></div>
-
-            <!-- Technical data sheet sidebar -->
-            <div class="lightbox-info">
-                <div class="lightbox-info-top">
-                    <h2 class="lb-title" id="lbTitle">Título de la Obra</h2>
-                    <div class="lb-sheet">
-                        <div class="lb-field">
-                            <span class="lb-label">Categoría Exigida</span>
-                            <span class="lb-value" id="lbCategory"></span>
-                        </div>
-                        <div class="lb-field">
-                            <span class="lb-label">Plano Fotográfico</span>
-                            <span class="lb-value" id="lbPlano"></span>
-                        </div>
-                        <div class="lb-field">
-                            <span class="lb-label">Regla de Composición</span>
-                            <span class="lb-value" id="lbComposicion"></span>
-                        </div>
-                        <div class="lb-field lb-field--intention">
-                            <span class="lb-label">Intención Artística &amp; Multimodal</span>
-                            <span class="lb-value lb-value--body" id="lbIntencion"></span>
-                        </div>
-                    </div>
+        <button class="lightbox-close" id="lightboxClose" aria-label="Close" data-cursor="link">
+            <svg viewBox="0 0 24 24" fill="none" stroke-linecap="round">
+                <line x1="18" y1="6" x2="6" y2="18"></line>
+                <line x1="6" y1="6" x2="18" y2="18"></line>
+            </svg>
+        </button>
+        <button class="lightbox-nav lightbox-prev" id="lightboxPrev" aria-label="Previous" data-cursor="link">
+            <svg viewBox="0 0 24 24" fill="none" stroke-linecap="round">
+                <polyline points="15 18 9 12 15 6"></polyline>
+            </svg>
+        </button>
+        <button class="lightbox-nav lightbox-next" id="lightboxNext" aria-label="Next" data-cursor="link">
+            <svg viewBox="0 0 24 24" fill="none" stroke-linecap="round">
+                <polyline points="9 6 15 12 9 18"></polyline>
+            </svg>
+        </button>
+        <div class="lightbox-content">
+            <div class="lightbox-image-wrap" id="lightboxImageWrap">
+                <img id="lightboxImage" src="" alt="">
+            </div>
+            <div class="lightbox-info" id="lightboxInfo">
+                <p class="lightbox-info-category" id="lbCategory"></p>
+                <h2 class="lightbox-info-title" id="lbTitle"></h2>
+                <p class="lightbox-info-subtitle" id="lbSubtitle"></p>
+                <div class="lightbox-info-divider"></div>
+                <div class="lightbox-info-detail">
+                    <p class="lightbox-info-detail-label" data-i18n="lb_camera">Cámara</p>
+                    <p class="lightbox-info-detail-value" id="lbCamera"></p>
                 </div>
-                <div class="lb-footer">
-                    <span class="lb-footer-dot"></span>
-                    Exposición Académica UT · 2026
+                <div class="lightbox-info-detail">
+                    <p class="lightbox-info-detail-label" data-i18n="lb_settings">Ajustes</p>
+                    <p class="lightbox-info-detail-value" id="lbSettings"></p>
+                </div>
+                <div class="lightbox-info-detail">
+                    <p class="lightbox-info-detail-label" data-i18n="lb_concept">Concepto</p>
+                    <p class="lightbox-info-detail-value" id="lbConcept"></p>
                 </div>
             </div>
         </div>
     </div>
 
-    <!-- ============================================ -->
-    <!-- FOOTER                                        -->
-    <!-- ============================================ -->
-    <footer class="main-footer">
-        <div class="container">
-            <div class="footer-brand">
-                Reflejos<span class="nav-dot"></span>
-            </div>
-            <p class="footer-copy">
-                &copy; 2026 Colectivo de Estudiantes · Lic. en Literatura y Lengua Castellana<br>
-                Multimodalidad y Medios de Comunicación · Universidad del Tolima
-            </p>
-        </div>
-    </footer>
+    <!-- ═══════════════════════════════════════════════ -->
+    <!-- SCRIPTS (CDN)                                   -->
+    <!-- ═══════════════════════════════════════════════ -->
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/ScrollTrigger.min.js"></script>
+    <script src="https://unpkg.com/lenis@1.1.18/dist/lenis.min.js"></script>
 
     <!-- App Logic -->
     <script src="app.js"></script>

@@ -768,6 +768,27 @@ h1, h2, h3, h4 {
     opacity: 1;
 }
 
+/* Hover action overlay inside image */
+.card-hover-action {
+    margin-top: 1.5rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 0.15em;
+    color: var(--gold);
+    font-weight: 600;
+    opacity: 0;
+    transform: translateY(10px);
+    transition: all 0.4s var(--ease-out) 0.1s;
+}
+
+.photo-card:hover .card-hover-action {
+    opacity: 1;
+    transform: translateY(0);
+}
+
 /* Category badge */
 .card-badge {
     display: inline-flex;
@@ -818,6 +839,30 @@ h1, h2, h3, h4 {
 .card-info {
     padding: 1rem 1.2rem;
     border-top: 1px solid var(--border);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+}
+
+.card-info-text {
+    flex: 1;
+}
+
+.card-action-btn {
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+    font-size: 0.65rem;
+    text-transform: uppercase;
+    letter-spacing: 0.15em;
+    color: var(--gold-dim);
+    font-weight: 600;
+    transition: color var(--t-fast);
+}
+
+.photo-card:hover .card-action-btn {
+    color: var(--gold-light);
 }
 
 .card-info-title {

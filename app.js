@@ -242,11 +242,21 @@ function buildGallery(container, obras, category) {
                     <span class="card-badge badge--${category}">${catName}</span>
                     <h3 class="card-hover-title">${obra.title}</h3>
                     <p class="card-hover-meta">${obra.plano}</p>
+                    <div class="card-hover-action">
+                        <span>Ver Ficha Interactiva</span>
+                        <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 3h6v6"></path><path d="M9 21H3v-6"></path><path d="M21 3l-7 7"></path><path d="M3 21l7-7"></path></svg>
+                    </div>
                 </div>
             </div>
             <div class="card-info">
-                <p class="card-info-title">${obra.title}</p>
-                <p class="card-info-meta">${obra.plano}</p>
+                <div class="card-info-text">
+                    <p class="card-info-title">${obra.title}</p>
+                    <p class="card-info-meta">${obra.plano}</p>
+                </div>
+                <div class="card-action-btn">
+                    <span>Explorar</span>
+                    <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+                </div>
             </div>
         `;
 

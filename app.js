@@ -999,51 +999,112 @@ function buildPortfolio() {
         grid.appendChild(div);
     });
 
-    // Filter Logic
-    const filters = document.querySelectorAll(".portfolio-filter-btn");
+    let currentLimit = 12;
+    const loadMoreBtn = document.getElementById("loadMoreBtn");
     const items = document.querySelectorAll(".portfolio-item");
 
-    filters.forEach(btn => {
-        btn.addEventListener("click", () => {
-            // Update active state
-            filters.forEach(f => f.classList.remove("active"));
-            btn.classList.add("active");
+    // Helper to apply filter and limit
+    const applyFilterAndLimit = (filter, animate = true) => {
+        let visibleCount = 0;
+        let totalMatched = 0;
+        
+        const updateDOM = () => {
+            items.forEach(item => {
+                const matchCategory = filter === "all" || item.dataset.category === filter;
+                if (matchCategory) {
+                    totalMatched++;
+                    if (visibleCount < currentLimit) {
+                        item.style.display = "inline-block";
+                        item.classList.remove("hidden");
+                        visibleCount++;
+                    } else {
+                        item.style.display = "none";
+                        item.classList.add("hidden");
+                    }
+                } else {
+                    item.style.display = "none";
+                    item.classList.add("hidden");
+                }
+            });
+            
+            if (totalMatched > currentLimit) {
+                loadMoreBtn.style.display = "inline-block";
+            } else {
+                loadMoreBtn.style.display = "none";
+            }
+            
+            ScrollTrigger.refresh();
+            
+            if (animate) {
+                const visibleItems = document.querySelectorAll(".portfolio-item:not(.hidden)");
+                gsap.to(visibleItems, {
+                    opacity: 1,
+                    scale: 1,
+                    duration: 0.6,
+                    stagger: 0.05,
+                    ease: "power2.out",
+                    overwrite: true
+                });
+            }
+        };
 
-            const filter = btn.dataset.filter;
-
-            // Animate out
+        if (animate) {
             gsap.to(items, {
                 opacity: 0,
                 scale: 0.9,
                 duration: 0.4,
-                stagger: 0.05,
-                onComplete: () => {
-                    items.forEach(item => {
-                        if (filter === "all" || item.dataset.category === filter) {
-                            item.style.display = "block";
-                            item.classList.remove("hidden");
-                        } else {
-                            item.style.display = "none";
-                            item.classList.add("hidden");
-                        }
-                    });
-                    
-                    // Refresh ScrollTrigger after layout change
-                    ScrollTrigger.refresh();
-
-                    // Animate in visible items
-                    const visibleItems = document.querySelectorAll(".portfolio-item:not(.hidden)");
-                    gsap.to(visibleItems, {
-                        opacity: 1,
-                        scale: 1,
-                        duration: 0.6,
-                        stagger: 0.1,
-                        ease: "power3.out"
-                    });
-                }
+                overwrite: true,
+                onComplete: updateDOM
             });
+        } else {
+            updateDOM();
+        }
+    };
+
+    // Initial render setup (hidden initially so applyFilterAndLimit handles animation)
+    items.forEach(item => {
+        item.style.opacity = "0";
+        item.style.display = "none";
+        item.classList.add("hidden");
+    });
+    
+    // Initial display
+    applyFilterAndLimit("all", true);
+
+    // Filter Logic
+    const filters = document.querySelectorAll(".portfolio-filter-btn");
+
+    filters.forEach(btn => {
+        btn.addEventListener("click", () => {
+            filters.forEach(f => f.classList.remove("active"));
+            btn.classList.add("active");
+            
+            currentLimit = 12; // Reset limit on category change
+            const filter = btn.dataset.filter;
+            applyFilterAndLimit(filter, true);
         });
     });
+
+    if (loadMoreBtn) {
+        loadMoreBtn.addEventListener("click", () => {
+            currentLimit += 12;
+            const activeFilter = document.querySelector(".portfolio-filter-btn.active").dataset.filter;
+            applyFilterAndLimit(activeFilter, false);
+            
+            // Animate just the newly added items
+            setTimeout(() => {
+                const visibleItems = document.querySelectorAll(".portfolio-item:not(.hidden)");
+                gsap.to(visibleItems, {
+                    opacity: 1,
+                    scale: 1,
+                    duration: 0.6,
+                    stagger: 0.05,
+                    ease: "power2.out",
+                    overwrite: true
+                });
+            }, 50);
+        });
+    }
 }
 
 // ─── LIGHTBOX ─────────────────────────────────────────────────────────────

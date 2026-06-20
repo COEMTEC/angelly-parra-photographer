@@ -1341,7 +1341,7 @@ body.cursor-hidden .cursor-follower { opacity: 0; }
 
 /* Mobile */
 @media (max-width: 768px) {
-  .portfolio-grid { column-count: 1; }
+  .portfolio-grid { column-count: 2; }
   .services-grid { grid-template-columns: 1fr; }
   .about-stats { grid-template-columns: repeat(2, 1fr); gap: 1.5rem; }
   .footer-inner { flex-direction: column; gap: 1.5rem; text-align: center; }

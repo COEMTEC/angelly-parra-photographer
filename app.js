@@ -155,12 +155,12 @@ const portfolioData = [
     {
         "id": 1,
         "category": "quinceaneras",
-        "title": "Angelly Parra - Quinceaneras",
+        "title": "Angelly Parra - 15 Años",
         "subtitle": "Fotografía Profesional",
-        "image": "./Fotos Angelly/15 años_/1E94AE71-B733-4B42-A712-6D8D5DB5A3AD.webp",
+        "image": "./Fotos Angelly/15 años_/1383D354-8042-4783-B592-FC57BDB07824.webp",
         "wide": false,
         "metadata": {
-            "camera": "Quinceaneras",
+            "camera": "15 Años",
             "settings": "Iluminación Profesional",
             "concept": "Capturando momentos únicos y energía genuina."
         }
@@ -168,12 +168,12 @@ const portfolioData = [
     {
         "id": 2,
         "category": "quinceaneras",
-        "title": "Angelly Parra - Quinceaneras",
+        "title": "Angelly Parra - 15 Años",
         "subtitle": "Fotografía Profesional",
-        "image": "./Fotos Angelly/15 años_/3231E239-C8F7-42E1-A926-8D1B0745D19E.webp",
+        "image": "./Fotos Angelly/15 años_/16282EC0-407E-4726-9B32-E674ADF1AD5E.webp",
         "wide": false,
         "metadata": {
-            "camera": "Quinceaneras",
+            "camera": "15 Años",
             "settings": "Iluminación Profesional",
             "concept": "Capturando momentos únicos y energía genuina."
         }
@@ -181,12 +181,12 @@ const portfolioData = [
     {
         "id": 3,
         "category": "quinceaneras",
-        "title": "Angelly Parra - Quinceaneras",
+        "title": "Angelly Parra - 15 Años",
         "subtitle": "Fotografía Profesional",
-        "image": "./Fotos Angelly/15 años_/48017653-5729-4D8B-89B9-42333D45BE5B.webp",
+        "image": "./Fotos Angelly/15 años_/1E94AE71-B733-4B42-A712-6D8D5DB5A3AD.webp",
         "wide": true,
         "metadata": {
-            "camera": "Quinceaneras",
+            "camera": "15 Años",
             "settings": "Iluminación Profesional",
             "concept": "Capturando momentos únicos y energía genuina."
         }
@@ -194,12 +194,12 @@ const portfolioData = [
     {
         "id": 4,
         "category": "quinceaneras",
-        "title": "Angelly Parra - Quinceaneras",
+        "title": "Angelly Parra - 15 Años",
         "subtitle": "Fotografía Profesional",
-        "image": "./Fotos Angelly/15 años_/4A04FF7F-916C-4B22-BF6A-3E45E1101D33.webp",
+        "image": "./Fotos Angelly/15 años_/3231E239-C8F7-42E1-A926-8D1B0745D19E.webp",
         "wide": false,
         "metadata": {
-            "camera": "Quinceaneras",
+            "camera": "15 Años",
             "settings": "Iluminación Profesional",
             "concept": "Capturando momentos únicos y energía genuina."
         }
@@ -207,31 +207,200 @@ const portfolioData = [
     {
         "id": 5,
         "category": "quinceaneras",
-        "title": "Angelly Parra - Quinceaneras",
+        "title": "Angelly Parra - 15 Años",
         "subtitle": "Fotografía Profesional",
-        "image": "./Fotos Angelly/15 años_/7A010BC1-FE7E-4D9B-BC01-424A268B6A2D.webp",
+        "image": "./Fotos Angelly/15 años_/36C0D88A-2AE1-4261-9FD1-F9221B726E02.webp",
         "wide": false,
         "metadata": {
-            "camera": "Quinceaneras",
+            "camera": "15 Años",
             "settings": "Iluminación Profesional",
             "concept": "Capturando momentos únicos y energía genuina."
         }
     },
     {
         "id": 6,
-        "category": "bodas",
-        "title": "Angelly Parra - Bodas",
+        "category": "quinceaneras",
+        "title": "Angelly Parra - 15 Años",
         "subtitle": "Fotografía Profesional",
-        "image": "./Fotos Angelly/Bodas_/05984C2C-B3B5-4AEF-AE63-EF434014F89B.webp",
+        "image": "./Fotos Angelly/15 años_/3D74B947-4A9F-4C70-9DFD-1410ED6B1935.webp",
         "wide": true,
         "metadata": {
-            "camera": "Bodas",
+            "camera": "15 Años",
             "settings": "Iluminación Profesional",
             "concept": "Capturando momentos únicos y energía genuina."
         }
     },
     {
         "id": 7,
+        "category": "quinceaneras",
+        "title": "Angelly Parra - 15 Años",
+        "subtitle": "Fotografía Profesional",
+        "image": "./Fotos Angelly/15 años_/48017653-5729-4D8B-89B9-42333D45BE5B.webp",
+        "wide": false,
+        "metadata": {
+            "camera": "15 Años",
+            "settings": "Iluminación Profesional",
+            "concept": "Capturando momentos únicos y energía genuina."
+        }
+    },
+    {
+        "id": 8,
+        "category": "quinceaneras",
+        "title": "Angelly Parra - 15 Años",
+        "subtitle": "Fotografía Profesional",
+        "image": "./Fotos Angelly/15 años_/49134A6F-0E5F-414E-8395-57F1A0C0C9BC.webp",
+        "wide": false,
+        "metadata": {
+            "camera": "15 Años",
+            "settings": "Iluminación Profesional",
+            "concept": "Capturando momentos únicos y energía genuina."
+        }
+    },
+    {
+        "id": 9,
+        "category": "quinceaneras",
+        "title": "Angelly Parra - 15 Años",
+        "subtitle": "Fotografía Profesional",
+        "image": "./Fotos Angelly/15 años_/4A04FF7F-916C-4B22-BF6A-3E45E1101D33.webp",
+        "wide": true,
+        "metadata": {
+            "camera": "15 Años",
+            "settings": "Iluminación Profesional",
+            "concept": "Capturando momentos únicos y energía genuina."
+        }
+    },
+    {
+        "id": 10,
+        "category": "quinceaneras",
+        "title": "Angelly Parra - 15 Años",
+        "subtitle": "Fotografía Profesional",
+        "image": "./Fotos Angelly/15 años_/5861F8A8-9923-413E-ADAF-EDC58361B605.webp",
+        "wide": false,
+        "metadata": {
+            "camera": "15 Años",
+            "settings": "Iluminación Profesional",
+            "concept": "Capturando momentos únicos y energía genuina."
+        }
+    },
+    {
+        "id": 11,
+        "category": "quinceaneras",
+        "title": "Angelly Parra - 15 Años",
+        "subtitle": "Fotografía Profesional",
+        "image": "./Fotos Angelly/15 años_/59710885-F3CD-4B1C-8862-F977FEFB24E0.webp",
+        "wide": false,
+        "metadata": {
+            "camera": "15 Años",
+            "settings": "Iluminación Profesional",
+            "concept": "Capturando momentos únicos y energía genuina."
+        }
+    },
+    {
+        "id": 12,
+        "category": "quinceaneras",
+        "title": "Angelly Parra - 15 Años",
+        "subtitle": "Fotografía Profesional",
+        "image": "./Fotos Angelly/15 años_/6916C601-7D3D-43D6-AC86-9353D5B84D66.webp",
+        "wide": true,
+        "metadata": {
+            "camera": "15 Años",
+            "settings": "Iluminación Profesional",
+            "concept": "Capturando momentos únicos y energía genuina."
+        }
+    },
+    {
+        "id": 13,
+        "category": "quinceaneras",
+        "title": "Angelly Parra - 15 Años",
+        "subtitle": "Fotografía Profesional",
+        "image": "./Fotos Angelly/15 años_/8619576A-3715-4DEC-B43C-6FCDDEF65C5E.webp",
+        "wide": false,
+        "metadata": {
+            "camera": "15 Años",
+            "settings": "Iluminación Profesional",
+            "concept": "Capturando momentos únicos y energía genuina."
+        }
+    },
+    {
+        "id": 14,
+        "category": "quinceaneras",
+        "title": "Angelly Parra - 15 Años",
+        "subtitle": "Fotografía Profesional",
+        "image": "./Fotos Angelly/15 años_/917F1D95-F880-4382-A0A6-A6DF134D2A08.webp",
+        "wide": false,
+        "metadata": {
+            "camera": "15 Años",
+            "settings": "Iluminación Profesional",
+            "concept": "Capturando momentos únicos y energía genuina."
+        }
+    },
+    {
+        "id": 15,
+        "category": "quinceaneras",
+        "title": "Angelly Parra - 15 Años",
+        "subtitle": "Fotografía Profesional",
+        "image": "./Fotos Angelly/15 años_/D9777026-C922-4C7C-B901-79E49349DAC4.webp",
+        "wide": true,
+        "metadata": {
+            "camera": "15 Años",
+            "settings": "Iluminación Profesional",
+            "concept": "Capturando momentos únicos y energía genuina."
+        }
+    },
+    {
+        "id": 16,
+        "category": "quinceaneras",
+        "title": "Angelly Parra - 15 Años",
+        "subtitle": "Fotografía Profesional",
+        "image": "./Fotos Angelly/15 años_/DB4C3CC3-261F-4619-A882-C791460E47AA.webp",
+        "wide": false,
+        "metadata": {
+            "camera": "15 Años",
+            "settings": "Iluminación Profesional",
+            "concept": "Capturando momentos únicos y energía genuina."
+        }
+    },
+    {
+        "id": 17,
+        "category": "quinceaneras",
+        "title": "Angelly Parra - 15 Años",
+        "subtitle": "Fotografía Profesional",
+        "image": "./Fotos Angelly/15 años_/E1C5B233-D321-447B-AD6B-44255554267C.webp",
+        "wide": false,
+        "metadata": {
+            "camera": "15 Años",
+            "settings": "Iluminación Profesional",
+            "concept": "Capturando momentos únicos y energía genuina."
+        }
+    },
+    {
+        "id": 18,
+        "category": "quinceaneras",
+        "title": "Angelly Parra - 15 Años",
+        "subtitle": "Fotografía Profesional",
+        "image": "./Fotos Angelly/15 años_/E76547F2-ED0B-43F3-90D0-1C5694BDAA5B.webp",
+        "wide": true,
+        "metadata": {
+            "camera": "15 Años",
+            "settings": "Iluminación Profesional",
+            "concept": "Capturando momentos únicos y energía genuina."
+        }
+    },
+    {
+        "id": 19,
+        "category": "quinceaneras",
+        "title": "Angelly Parra - 15 Años",
+        "subtitle": "Fotografía Profesional",
+        "image": "./Fotos Angelly/15 años_/F2B46D39-435E-46E3-B80A-68D2CAA62FC4.webp",
+        "wide": false,
+        "metadata": {
+            "camera": "15 Años",
+            "settings": "Iluminación Profesional",
+            "concept": "Capturando momentos únicos y energía genuina."
+        }
+    },
+    {
+        "id": 20,
         "category": "bodas",
         "title": "Angelly Parra - Bodas",
         "subtitle": "Fotografía Profesional",
@@ -244,24 +413,11 @@ const portfolioData = [
         }
     },
     {
-        "id": 8,
+        "id": 21,
         "category": "bodas",
         "title": "Angelly Parra - Bodas",
         "subtitle": "Fotografía Profesional",
         "image": "./Fotos Angelly/Bodas_/26321E9F-07D1-4083-A34D-73339A2CA5B6.webp",
-        "wide": false,
-        "metadata": {
-            "camera": "Bodas",
-            "settings": "Iluminación Profesional",
-            "concept": "Capturando momentos únicos y energía genuina."
-        }
-    },
-    {
-        "id": 9,
-        "category": "bodas",
-        "title": "Angelly Parra - Bodas",
-        "subtitle": "Fotografía Profesional",
-        "image": "./Fotos Angelly/Bodas_/265AE582-BCC0-4071-9622-EB848AC4808F.webp",
         "wide": true,
         "metadata": {
             "camera": "Bodas",
@@ -270,7 +426,20 @@ const portfolioData = [
         }
     },
     {
-        "id": 10,
+        "id": 22,
+        "category": "bodas",
+        "title": "Angelly Parra - Bodas",
+        "subtitle": "Fotografía Profesional",
+        "image": "./Fotos Angelly/Bodas_/265AE582-BCC0-4071-9622-EB848AC4808F.webp",
+        "wide": false,
+        "metadata": {
+            "camera": "Bodas",
+            "settings": "Iluminación Profesional",
+            "concept": "Capturando momentos únicos y energía genuina."
+        }
+    },
+    {
+        "id": 23,
         "category": "bodas",
         "title": "Angelly Parra - Bodas",
         "subtitle": "Fotografía Profesional",
@@ -283,24 +452,11 @@ const portfolioData = [
         }
     },
     {
-        "id": 11,
+        "id": 24,
         "category": "bodas",
         "title": "Angelly Parra - Bodas",
         "subtitle": "Fotografía Profesional",
         "image": "./Fotos Angelly/Bodas_/7A036D12-39AA-4636-88BB-AE75A9B924EF.webp",
-        "wide": false,
-        "metadata": {
-            "camera": "Bodas",
-            "settings": "Iluminación Profesional",
-            "concept": "Capturando momentos únicos y energía genuina."
-        }
-    },
-    {
-        "id": 12,
-        "category": "bodas",
-        "title": "Angelly Parra - Bodas",
-        "subtitle": "Fotografía Profesional",
-        "image": "./Fotos Angelly/Bodas_/A8044BBE-32A6-4610-B2A6-00A000C54279.webp",
         "wide": true,
         "metadata": {
             "camera": "Bodas",
@@ -309,7 +465,20 @@ const portfolioData = [
         }
     },
     {
-        "id": 13,
+        "id": 25,
+        "category": "bodas",
+        "title": "Angelly Parra - Bodas",
+        "subtitle": "Fotografía Profesional",
+        "image": "./Fotos Angelly/Bodas_/A8044BBE-32A6-4610-B2A6-00A000C54279.webp",
+        "wide": false,
+        "metadata": {
+            "camera": "Bodas",
+            "settings": "Iluminación Profesional",
+            "concept": "Capturando momentos únicos y energía genuina."
+        }
+    },
+    {
+        "id": 26,
         "category": "bodas",
         "title": "Angelly Parra - Bodas",
         "subtitle": "Fotografía Profesional",
@@ -322,24 +491,11 @@ const portfolioData = [
         }
     },
     {
-        "id": 14,
+        "id": 27,
         "category": "bodas",
         "title": "Angelly Parra - Bodas",
         "subtitle": "Fotografía Profesional",
         "image": "./Fotos Angelly/Bodas_/BA9E5F52-E241-4C48-8D4C-22EC4F9FC9B7.webp",
-        "wide": false,
-        "metadata": {
-            "camera": "Bodas",
-            "settings": "Iluminación Profesional",
-            "concept": "Capturando momentos únicos y energía genuina."
-        }
-    },
-    {
-        "id": 15,
-        "category": "bodas",
-        "title": "Angelly Parra - Bodas",
-        "subtitle": "Fotografía Profesional",
-        "image": "./Fotos Angelly/Bodas_/DC4EF904-6C6B-4CCD-A063-ADE9EF49AC7E.webp",
         "wide": true,
         "metadata": {
             "camera": "Bodas",
@@ -348,7 +504,20 @@ const portfolioData = [
         }
     },
     {
-        "id": 16,
+        "id": 28,
+        "category": "bodas",
+        "title": "Angelly Parra - Bodas",
+        "subtitle": "Fotografía Profesional",
+        "image": "./Fotos Angelly/Bodas_/DC4EF904-6C6B-4CCD-A063-ADE9EF49AC7E.webp",
+        "wide": false,
+        "metadata": {
+            "camera": "Bodas",
+            "settings": "Iluminación Profesional",
+            "concept": "Capturando momentos únicos y energía genuina."
+        }
+    },
+    {
+        "id": 29,
         "category": "bodas",
         "title": "Angelly Parra - Bodas",
         "subtitle": "Fotografía Profesional",
@@ -361,183 +530,14 @@ const portfolioData = [
         }
     },
     {
-        "id": 17,
+        "id": 30,
         "category": "bodas",
         "title": "Angelly Parra - Bodas",
         "subtitle": "Fotografía Profesional",
         "image": "./Fotos Angelly/Bodas_/FEDCDC3C-ADF2-45C3-BEF2-FDB631015607.webp",
-        "wide": false,
+        "wide": true,
         "metadata": {
             "camera": "Bodas",
-            "settings": "Iluminación Profesional",
-            "concept": "Capturando momentos únicos y energía genuina."
-        }
-    },
-    {
-        "id": 18,
-        "category": "eventos",
-        "title": "Angelly Parra - Eventos",
-        "subtitle": "Fotografía Profesional",
-        "image": "./Fotos Angelly/Eventos_/0BF11A5C-D751-4246-85B9-F525C76C001F.webp",
-        "wide": true,
-        "metadata": {
-            "camera": "Eventos",
-            "settings": "Iluminación Profesional",
-            "concept": "Capturando momentos únicos y energía genuina."
-        }
-    },
-    {
-        "id": 19,
-        "category": "eventos",
-        "title": "Angelly Parra - Eventos",
-        "subtitle": "Fotografía Profesional",
-        "image": "./Fotos Angelly/Eventos_/1CF90047-320B-4EFC-BC37-12B8A130ED99.webp",
-        "wide": false,
-        "metadata": {
-            "camera": "Eventos",
-            "settings": "Iluminación Profesional",
-            "concept": "Capturando momentos únicos y energía genuina."
-        }
-    },
-    {
-        "id": 20,
-        "category": "eventos",
-        "title": "Angelly Parra - Eventos",
-        "subtitle": "Fotografía Profesional",
-        "image": "./Fotos Angelly/Eventos_/35AC0E01-D1C3-4CEE-81A3-50327E1D8058.webp",
-        "wide": false,
-        "metadata": {
-            "camera": "Eventos",
-            "settings": "Iluminación Profesional",
-            "concept": "Capturando momentos únicos y energía genuina."
-        }
-    },
-    {
-        "id": 21,
-        "category": "eventos",
-        "title": "Angelly Parra - Eventos",
-        "subtitle": "Fotografía Profesional",
-        "image": "./Fotos Angelly/Eventos_/5D8BE743-84A7-4391-B82C-F782510A39CE.webp",
-        "wide": true,
-        "metadata": {
-            "camera": "Eventos",
-            "settings": "Iluminación Profesional",
-            "concept": "Capturando momentos únicos y energía genuina."
-        }
-    },
-    {
-        "id": 22,
-        "category": "eventos",
-        "title": "Angelly Parra - Eventos",
-        "subtitle": "Fotografía Profesional",
-        "image": "./Fotos Angelly/Eventos_/83A859D4-122A-47FC-8102-F2E6814AB0F3.webp",
-        "wide": false,
-        "metadata": {
-            "camera": "Eventos",
-            "settings": "Iluminación Profesional",
-            "concept": "Capturando momentos únicos y energía genuina."
-        }
-    },
-    {
-        "id": 23,
-        "category": "eventos",
-        "title": "Angelly Parra - Eventos",
-        "subtitle": "Fotografía Profesional",
-        "image": "./Fotos Angelly/Eventos_/B1E725CE-FC54-48A0-89BF-27191A1B9643.webp",
-        "wide": false,
-        "metadata": {
-            "camera": "Eventos",
-            "settings": "Iluminación Profesional",
-            "concept": "Capturando momentos únicos y energía genuina."
-        }
-    },
-    {
-        "id": 24,
-        "category": "eventos",
-        "title": "Angelly Parra - Eventos",
-        "subtitle": "Fotografía Profesional",
-        "image": "./Fotos Angelly/Eventos_/IMG_2972.webp",
-        "wide": true,
-        "metadata": {
-            "camera": "Eventos",
-            "settings": "Iluminación Profesional",
-            "concept": "Capturando momentos únicos y energía genuina."
-        }
-    },
-    {
-        "id": 25,
-        "category": "eventos",
-        "title": "Angelly Parra - Eventos",
-        "subtitle": "Fotografía Profesional",
-        "image": "./Fotos Angelly/Eventos_/IMG_2973.webp",
-        "wide": false,
-        "metadata": {
-            "camera": "Eventos",
-            "settings": "Iluminación Profesional",
-            "concept": "Capturando momentos únicos y energía genuina."
-        }
-    },
-    {
-        "id": 26,
-        "category": "eventos",
-        "title": "Angelly Parra - Eventos",
-        "subtitle": "Fotografía Profesional",
-        "image": "./Fotos Angelly/Eventos_/IMG_2974.webp",
-        "wide": false,
-        "metadata": {
-            "camera": "Eventos",
-            "settings": "Iluminación Profesional",
-            "concept": "Capturando momentos únicos y energía genuina."
-        }
-    },
-    {
-        "id": 27,
-        "category": "eventos",
-        "title": "Angelly Parra - Eventos",
-        "subtitle": "Fotografía Profesional",
-        "image": "./Fotos Angelly/Eventos_/IMG_2976.webp",
-        "wide": true,
-        "metadata": {
-            "camera": "Eventos",
-            "settings": "Iluminación Profesional",
-            "concept": "Capturando momentos únicos y energía genuina."
-        }
-    },
-    {
-        "id": 28,
-        "category": "eventos",
-        "title": "Angelly Parra - Eventos",
-        "subtitle": "Fotografía Profesional",
-        "image": "./Fotos Angelly/Foto dj_/4BA9E5FB-84F5-47C5-8906-E60AE6C241ED.webp",
-        "wide": false,
-        "metadata": {
-            "camera": "Eventos",
-            "settings": "Iluminación Profesional",
-            "concept": "Capturando momentos únicos y energía genuina."
-        }
-    },
-    {
-        "id": 29,
-        "category": "eventos",
-        "title": "Angelly Parra - Eventos",
-        "subtitle": "Fotografía Profesional",
-        "image": "./Fotos Angelly/Foto dj_/AA586514-2CD4-4B99-B615-EEB432DE5639.webp",
-        "wide": false,
-        "metadata": {
-            "camera": "Eventos",
-            "settings": "Iluminación Profesional",
-            "concept": "Capturando momentos únicos y energía genuina."
-        }
-    },
-    {
-        "id": 30,
-        "category": "eventos",
-        "title": "Angelly Parra - Eventos",
-        "subtitle": "Fotografía Profesional",
-        "image": "./Fotos Angelly/Foto dj_/B478E68E-CC7D-4D9D-9BF4-EFD9D796B1A1.webp",
-        "wide": true,
-        "metadata": {
-            "camera": "Eventos",
             "settings": "Iluminación Profesional",
             "concept": "Capturando momentos únicos y energía genuina."
         }
@@ -547,7 +547,7 @@ const portfolioData = [
         "category": "eventos",
         "title": "Angelly Parra - Eventos",
         "subtitle": "Fotografía Profesional",
-        "image": "./Fotos Angelly/Foto dj_/CDC90FFF-E8EA-4B10-93AE-C5ED5A10471B.webp",
+        "image": "./Fotos Angelly/Eventos_/0BF11A5C-D751-4246-85B9-F525C76C001F.webp",
         "wide": false,
         "metadata": {
             "camera": "Eventos",
@@ -560,7 +560,7 @@ const portfolioData = [
         "category": "eventos",
         "title": "Angelly Parra - Eventos",
         "subtitle": "Fotografía Profesional",
-        "image": "./Fotos Angelly/Fotos artistas_/da098474-cb13-40e5-9031-2ace5648c277.webp",
+        "image": "./Fotos Angelly/Eventos_/1CF90047-320B-4EFC-BC37-12B8A130ED99.webp",
         "wide": false,
         "metadata": {
             "camera": "Eventos",
@@ -573,7 +573,7 @@ const portfolioData = [
         "category": "eventos",
         "title": "Angelly Parra - Eventos",
         "subtitle": "Fotografía Profesional",
-        "image": "./Fotos Angelly/Fotos artistas_/IMG_2993.webp",
+        "image": "./Fotos Angelly/Eventos_/35AC0E01-D1C3-4CEE-81A3-50327E1D8058.webp",
         "wide": true,
         "metadata": {
             "camera": "Eventos",
@@ -586,7 +586,7 @@ const portfolioData = [
         "category": "eventos",
         "title": "Angelly Parra - Eventos",
         "subtitle": "Fotografía Profesional",
-        "image": "./Fotos Angelly/Fotos artistas_/IMG_2994.webp",
+        "image": "./Fotos Angelly/Eventos_/5D8BE743-84A7-4391-B82C-F782510A39CE.webp",
         "wide": false,
         "metadata": {
             "camera": "Eventos",
@@ -599,7 +599,7 @@ const portfolioData = [
         "category": "eventos",
         "title": "Angelly Parra - Eventos",
         "subtitle": "Fotografía Profesional",
-        "image": "./Fotos Angelly/Fotos artistas_/IMG_3073.webp",
+        "image": "./Fotos Angelly/Eventos_/83A859D4-122A-47FC-8102-F2E6814AB0F3.webp",
         "wide": false,
         "metadata": {
             "camera": "Eventos",
@@ -612,7 +612,7 @@ const portfolioData = [
         "category": "eventos",
         "title": "Angelly Parra - Eventos",
         "subtitle": "Fotografía Profesional",
-        "image": "./Fotos Angelly/Fotos artistas_/IMG_3076.webp",
+        "image": "./Fotos Angelly/Eventos_/B1E725CE-FC54-48A0-89BF-27191A1B9643.webp",
         "wide": true,
         "metadata": {
             "camera": "Eventos",
@@ -622,195 +622,416 @@ const portfolioData = [
     },
     {
         "id": 37,
-        "category": "deportes",
-        "title": "Angelly Parra - Deportes",
+        "category": "eventos",
+        "title": "Angelly Parra - Eventos",
         "subtitle": "Fotografía Profesional",
-        "image": "./Fotos Angelly/Fotos fútbol_/175F8C56-85C9-4C9A-85B2-63AE956A465A.webp",
+        "image": "./Fotos Angelly/Eventos_/IMG_2972.webp",
         "wide": false,
         "metadata": {
-            "camera": "Deportes",
+            "camera": "Eventos",
             "settings": "Iluminación Profesional",
             "concept": "Capturando momentos únicos y energía genuina."
         }
     },
     {
         "id": 38,
-        "category": "deportes",
-        "title": "Angelly Parra - Deportes",
+        "category": "eventos",
+        "title": "Angelly Parra - Eventos",
         "subtitle": "Fotografía Profesional",
-        "image": "./Fotos Angelly/Fotos fútbol_/5A26B270-C635-4FE5-897F-31AD93F6A132.webp",
+        "image": "./Fotos Angelly/Eventos_/IMG_2973.webp",
         "wide": false,
         "metadata": {
-            "camera": "Deportes",
+            "camera": "Eventos",
             "settings": "Iluminación Profesional",
             "concept": "Capturando momentos únicos y energía genuina."
         }
     },
     {
         "id": 39,
-        "category": "deportes",
-        "title": "Angelly Parra - Deportes",
+        "category": "eventos",
+        "title": "Angelly Parra - Eventos",
         "subtitle": "Fotografía Profesional",
-        "image": "./Fotos Angelly/Fotos fútbol_/8604D419-EB13-4254-93CE-32AF4923C959.webp",
+        "image": "./Fotos Angelly/Eventos_/IMG_2974.webp",
         "wide": true,
         "metadata": {
-            "camera": "Deportes",
+            "camera": "Eventos",
             "settings": "Iluminación Profesional",
             "concept": "Capturando momentos únicos y energía genuina."
         }
     },
     {
         "id": 40,
-        "category": "deportes",
-        "title": "Angelly Parra - Deportes",
+        "category": "eventos",
+        "title": "Angelly Parra - Eventos",
         "subtitle": "Fotografía Profesional",
-        "image": "./Fotos Angelly/Fotos fútbol_/E04F9582-B937-45A4-A29C-B33DF8E39E66.webp",
+        "image": "./Fotos Angelly/Eventos_/IMG_2976.webp",
         "wide": false,
         "metadata": {
-            "camera": "Deportes",
+            "camera": "Eventos",
             "settings": "Iluminación Profesional",
             "concept": "Capturando momentos únicos y energía genuina."
         }
     },
     {
         "id": 41,
-        "category": "babyshowers",
-        "title": "Angelly Parra - Babyshowers",
+        "category": "eventos",
+        "title": "Angelly Parra - Eventos",
         "subtitle": "Fotografía Profesional",
-        "image": "./Fotos Angelly/Variadas_/69ebf24b-3caa-4e26-a435-df25c56637e1.webp",
+        "image": "./Fotos Angelly/Eventos_/PHOTO-2026-06-08-16-45-50(2).webp",
         "wide": false,
         "metadata": {
-            "camera": "Babyshowers",
+            "camera": "Eventos",
             "settings": "Iluminación Profesional",
             "concept": "Capturando momentos únicos y energía genuina."
         }
     },
     {
         "id": 42,
-        "category": "babyshowers",
-        "title": "Angelly Parra - Babyshowers",
+        "category": "eventos",
+        "title": "Angelly Parra - Eventos",
         "subtitle": "Fotografía Profesional",
-        "image": "./Fotos Angelly/Variadas_/6D7A3BA7-39C0-44B2-A804-85F026B04CAE(1).webp",
+        "image": "./Fotos Angelly/Eventos_/PHOTO-2026-06-08-16-45-50(8).webp",
         "wide": true,
         "metadata": {
-            "camera": "Babyshowers",
+            "camera": "Eventos",
             "settings": "Iluminación Profesional",
             "concept": "Capturando momentos únicos y energía genuina."
         }
     },
     {
         "id": 43,
-        "category": "babyshowers",
-        "title": "Angelly Parra - Babyshowers",
+        "category": "eventos",
+        "title": "Angelly Parra - Eventos",
         "subtitle": "Fotografía Profesional",
-        "image": "./Fotos Angelly/Variadas_/760DD066-471D-4B20-9CA8-E7CCBB43B538.webp",
+        "image": "./Fotos Angelly/Eventos_/PHOTO-2026-06-08-16-45-51(5).webp",
         "wide": false,
         "metadata": {
-            "camera": "Babyshowers",
+            "camera": "Eventos",
             "settings": "Iluminación Profesional",
             "concept": "Capturando momentos únicos y energía genuina."
         }
     },
     {
         "id": 44,
-        "category": "babyshowers",
-        "title": "Angelly Parra - Babyshowers",
+        "category": "eventos",
+        "title": "Angelly Parra - Eventos",
         "subtitle": "Fotografía Profesional",
-        "image": "./Fotos Angelly/Variadas_/A36A6085-79F7-4ECC-8DA5-16A878C910A0.webp",
+        "image": "./Fotos Angelly/Eventos_/PHOTO-2026-06-08-17-58-18(2).webp",
         "wide": false,
         "metadata": {
-            "camera": "Babyshowers",
+            "camera": "Eventos",
             "settings": "Iluminación Profesional",
             "concept": "Capturando momentos únicos y energía genuina."
         }
     },
     {
         "id": 45,
-        "category": "babyshowers",
-        "title": "Angelly Parra - Babyshowers",
+        "category": "eventos",
+        "title": "Angelly Parra - Eventos",
         "subtitle": "Fotografía Profesional",
-        "image": "./Fotos Angelly/Variadas_/B5664045-C499-47B8-B6F5-37517831BD39.webp",
+        "image": "./Fotos Angelly/Foto dj_/4BA9E5FB-84F5-47C5-8906-E60AE6C241ED.webp",
         "wide": true,
         "metadata": {
-            "camera": "Babyshowers",
+            "camera": "Eventos",
             "settings": "Iluminación Profesional",
             "concept": "Capturando momentos únicos y energía genuina."
         }
     },
     {
         "id": 46,
-        "category": "babyshowers",
-        "title": "Angelly Parra - Babyshowers",
+        "category": "eventos",
+        "title": "Angelly Parra - Eventos",
         "subtitle": "Fotografía Profesional",
-        "image": "./Fotos Angelly/Variadas_/b740aec8-8ee9-4115-b7a5-408653e55b7b.webp",
+        "image": "./Fotos Angelly/Foto dj_/AA586514-2CD4-4B99-B615-EEB432DE5639.webp",
         "wide": false,
         "metadata": {
-            "camera": "Babyshowers",
+            "camera": "Eventos",
             "settings": "Iluminación Profesional",
             "concept": "Capturando momentos únicos y energía genuina."
         }
     },
     {
         "id": 47,
-        "category": "babyshowers",
-        "title": "Angelly Parra - Babyshowers",
+        "category": "eventos",
+        "title": "Angelly Parra - Eventos",
         "subtitle": "Fotografía Profesional",
-        "image": "./Fotos Angelly/Variadas_/F409D1D1-5B65-44DA-8958-68A1B860FD67.webp",
+        "image": "./Fotos Angelly/Foto dj_/B478E68E-CC7D-4D9D-9BF4-EFD9D796B1A1.webp",
         "wide": false,
         "metadata": {
-            "camera": "Babyshowers",
+            "camera": "Eventos",
             "settings": "Iluminación Profesional",
             "concept": "Capturando momentos únicos y energía genuina."
         }
     },
     {
         "id": 48,
-        "category": "babyshowers",
-        "title": "Angelly Parra - Babyshowers",
+        "category": "eventos",
+        "title": "Angelly Parra - Eventos",
         "subtitle": "Fotografía Profesional",
-        "image": "./Fotos Angelly/Variadas_/F5456135-CB83-445C-BD4C-B58C2211A16C.webp",
+        "image": "./Fotos Angelly/Foto dj_/CDC90FFF-E8EA-4B10-93AE-C5ED5A10471B.webp",
         "wide": true,
         "metadata": {
-            "camera": "Babyshowers",
+            "camera": "Eventos",
             "settings": "Iluminación Profesional",
             "concept": "Capturando momentos únicos y energía genuina."
         }
     },
     {
         "id": 49,
-        "category": "babyshowers",
-        "title": "Angelly Parra - Babyshowers",
+        "category": "eventos",
+        "title": "Angelly Parra - Eventos",
         "subtitle": "Fotografía Profesional",
-        "image": "./Fotos Angelly/Variadas_/IMG_3095.webp",
+        "image": "./Fotos Angelly/Fotos artistas_/da098474-cb13-40e5-9031-2ace5648c277.webp",
         "wide": false,
         "metadata": {
-            "camera": "Babyshowers",
+            "camera": "Eventos",
             "settings": "Iluminación Profesional",
             "concept": "Capturando momentos únicos y energía genuina."
         }
     },
     {
         "id": 50,
-        "category": "babyshowers",
-        "title": "Angelly Parra - Babyshowers",
+        "category": "eventos",
+        "title": "Angelly Parra - Eventos",
         "subtitle": "Fotografía Profesional",
-        "image": "./Fotos Angelly/Variadas_/IMG_3096.webp",
+        "image": "./Fotos Angelly/Fotos artistas_/IMG_2993.webp",
         "wide": false,
         "metadata": {
-            "camera": "Babyshowers",
+            "camera": "Eventos",
             "settings": "Iluminación Profesional",
             "concept": "Capturando momentos únicos y energía genuina."
         }
     },
     {
         "id": 51,
-        "category": "babyshowers",
-        "title": "Angelly Parra - Babyshowers",
+        "category": "eventos",
+        "title": "Angelly Parra - Eventos",
         "subtitle": "Fotografía Profesional",
-        "image": "./Fotos Angelly/Variadas_/IMG_3097.webp",
+        "image": "./Fotos Angelly/Fotos artistas_/IMG_2994.webp",
         "wide": true,
         "metadata": {
-            "camera": "Babyshowers",
+            "camera": "Eventos",
+            "settings": "Iluminación Profesional",
+            "concept": "Capturando momentos únicos y energía genuina."
+        }
+    },
+    {
+        "id": 52,
+        "category": "eventos",
+        "title": "Angelly Parra - Eventos",
+        "subtitle": "Fotografía Profesional",
+        "image": "./Fotos Angelly/Fotos artistas_/IMG_3073.webp",
+        "wide": false,
+        "metadata": {
+            "camera": "Eventos",
+            "settings": "Iluminación Profesional",
+            "concept": "Capturando momentos únicos y energía genuina."
+        }
+    },
+    {
+        "id": 53,
+        "category": "eventos",
+        "title": "Angelly Parra - Eventos",
+        "subtitle": "Fotografía Profesional",
+        "image": "./Fotos Angelly/Fotos artistas_/IMG_3076.webp",
+        "wide": false,
+        "metadata": {
+            "camera": "Eventos",
+            "settings": "Iluminación Profesional",
+            "concept": "Capturando momentos únicos y energía genuina."
+        }
+    },
+    {
+        "id": 54,
+        "category": "eventos",
+        "title": "Angelly Parra - Eventos",
+        "subtitle": "Fotografía Profesional",
+        "image": "./Fotos Angelly/Fotos fútbol_/175F8C56-85C9-4C9A-85B2-63AE956A465A.webp",
+        "wide": true,
+        "metadata": {
+            "camera": "Eventos",
+            "settings": "Iluminación Profesional",
+            "concept": "Capturando momentos únicos y energía genuina."
+        }
+    },
+    {
+        "id": 55,
+        "category": "eventos",
+        "title": "Angelly Parra - Eventos",
+        "subtitle": "Fotografía Profesional",
+        "image": "./Fotos Angelly/Fotos fútbol_/5A26B270-C635-4FE5-897F-31AD93F6A132.webp",
+        "wide": false,
+        "metadata": {
+            "camera": "Eventos",
+            "settings": "Iluminación Profesional",
+            "concept": "Capturando momentos únicos y energía genuina."
+        }
+    },
+    {
+        "id": 56,
+        "category": "eventos",
+        "title": "Angelly Parra - Eventos",
+        "subtitle": "Fotografía Profesional",
+        "image": "./Fotos Angelly/Fotos fútbol_/8604D419-EB13-4254-93CE-32AF4923C959.webp",
+        "wide": false,
+        "metadata": {
+            "camera": "Eventos",
+            "settings": "Iluminación Profesional",
+            "concept": "Capturando momentos únicos y energía genuina."
+        }
+    },
+    {
+        "id": 57,
+        "category": "eventos",
+        "title": "Angelly Parra - Eventos",
+        "subtitle": "Fotografía Profesional",
+        "image": "./Fotos Angelly/Fotos fútbol_/E04F9582-B937-45A4-A29C-B33DF8E39E66.webp",
+        "wide": true,
+        "metadata": {
+            "camera": "Eventos",
+            "settings": "Iluminación Profesional",
+            "concept": "Capturando momentos únicos y energía genuina."
+        }
+    },
+    {
+        "id": 58,
+        "category": "eventos",
+        "title": "Angelly Parra - Eventos",
+        "subtitle": "Fotografía Profesional",
+        "image": "./Fotos Angelly/Variadas_/69ebf24b-3caa-4e26-a435-df25c56637e1.webp",
+        "wide": false,
+        "metadata": {
+            "camera": "Eventos",
+            "settings": "Iluminación Profesional",
+            "concept": "Capturando momentos únicos y energía genuina."
+        }
+    },
+    {
+        "id": 59,
+        "category": "eventos",
+        "title": "Angelly Parra - Eventos",
+        "subtitle": "Fotografía Profesional",
+        "image": "./Fotos Angelly/Variadas_/6D7A3BA7-39C0-44B2-A804-85F026B04CAE(1).webp",
+        "wide": false,
+        "metadata": {
+            "camera": "Eventos",
+            "settings": "Iluminación Profesional",
+            "concept": "Capturando momentos únicos y energía genuina."
+        }
+    },
+    {
+        "id": 60,
+        "category": "eventos",
+        "title": "Angelly Parra - Eventos",
+        "subtitle": "Fotografía Profesional",
+        "image": "./Fotos Angelly/Variadas_/760DD066-471D-4B20-9CA8-E7CCBB43B538.webp",
+        "wide": true,
+        "metadata": {
+            "camera": "Eventos",
+            "settings": "Iluminación Profesional",
+            "concept": "Capturando momentos únicos y energía genuina."
+        }
+    },
+    {
+        "id": 61,
+        "category": "eventos",
+        "title": "Angelly Parra - Eventos",
+        "subtitle": "Fotografía Profesional",
+        "image": "./Fotos Angelly/Variadas_/A36A6085-79F7-4ECC-8DA5-16A878C910A0.webp",
+        "wide": false,
+        "metadata": {
+            "camera": "Eventos",
+            "settings": "Iluminación Profesional",
+            "concept": "Capturando momentos únicos y energía genuina."
+        }
+    },
+    {
+        "id": 62,
+        "category": "eventos",
+        "title": "Angelly Parra - Eventos",
+        "subtitle": "Fotografía Profesional",
+        "image": "./Fotos Angelly/Variadas_/B5664045-C499-47B8-B6F5-37517831BD39.webp",
+        "wide": false,
+        "metadata": {
+            "camera": "Eventos",
+            "settings": "Iluminación Profesional",
+            "concept": "Capturando momentos únicos y energía genuina."
+        }
+    },
+    {
+        "id": 63,
+        "category": "eventos",
+        "title": "Angelly Parra - Eventos",
+        "subtitle": "Fotografía Profesional",
+        "image": "./Fotos Angelly/Variadas_/b740aec8-8ee9-4115-b7a5-408653e55b7b.webp",
+        "wide": true,
+        "metadata": {
+            "camera": "Eventos",
+            "settings": "Iluminación Profesional",
+            "concept": "Capturando momentos únicos y energía genuina."
+        }
+    },
+    {
+        "id": 64,
+        "category": "eventos",
+        "title": "Angelly Parra - Eventos",
+        "subtitle": "Fotografía Profesional",
+        "image": "./Fotos Angelly/Variadas_/F409D1D1-5B65-44DA-8958-68A1B860FD67.webp",
+        "wide": false,
+        "metadata": {
+            "camera": "Eventos",
+            "settings": "Iluminación Profesional",
+            "concept": "Capturando momentos únicos y energía genuina."
+        }
+    },
+    {
+        "id": 65,
+        "category": "eventos",
+        "title": "Angelly Parra - Eventos",
+        "subtitle": "Fotografía Profesional",
+        "image": "./Fotos Angelly/Variadas_/F5456135-CB83-445C-BD4C-B58C2211A16C.webp",
+        "wide": false,
+        "metadata": {
+            "camera": "Eventos",
+            "settings": "Iluminación Profesional",
+            "concept": "Capturando momentos únicos y energía genuina."
+        }
+    },
+    {
+        "id": 66,
+        "category": "eventos",
+        "title": "Angelly Parra - Eventos",
+        "subtitle": "Fotografía Profesional",
+        "image": "./Fotos Angelly/Variadas_/IMG_3095.webp",
+        "wide": true,
+        "metadata": {
+            "camera": "Eventos",
+            "settings": "Iluminación Profesional",
+            "concept": "Capturando momentos únicos y energía genuina."
+        }
+    },
+    {
+        "id": 67,
+        "category": "eventos",
+        "title": "Angelly Parra - Eventos",
+        "subtitle": "Fotografía Profesional",
+        "image": "./Fotos Angelly/Variadas_/IMG_3096.webp",
+        "wide": false,
+        "metadata": {
+            "camera": "Eventos",
+            "settings": "Iluminación Profesional",
+            "concept": "Capturando momentos únicos y energía genuina."
+        }
+    },
+    {
+        "id": 68,
+        "category": "eventos",
+        "title": "Angelly Parra - Eventos",
+        "subtitle": "Fotografía Profesional",
+        "image": "./Fotos Angelly/Variadas_/IMG_3097.webp",
+        "wide": false,
+        "metadata": {
+            "camera": "Eventos",
             "settings": "Iluminación Profesional",
             "concept": "Capturando momentos únicos y energía genuina."
         }

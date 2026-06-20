@@ -699,6 +699,25 @@ body.cursor-hidden .cursor-follower { opacity: 0; }
   color: var(--bg-primary);
 }
 
+.primary-btn {
+  background: transparent;
+  color: var(--pink);
+  border: 1px solid var(--pink);
+  font-family: var(--font-display);
+  font-weight: 500;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: all 0.4s var(--ease-out-expo);
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  font-size: 0.8rem;
+}
+
+.primary-btn:hover {
+  background: var(--pink);
+  color: var(--bg-primary);
+}
+
 .portfolio-grid {
   column-count: 3;
   column-gap: 1.2rem;

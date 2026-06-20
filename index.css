@@ -1157,6 +1157,46 @@ body.cursor-hidden .cursor-follower { opacity: 0; }
   letter-spacing: 0.05em;
 }
 
+.footer-credit {
+  text-align: center;
+  font-size: 0.75rem;
+  color: var(--text-muted);
+  margin-top: 1.5rem;
+  letter-spacing: 0.05em;
+}
+
+.footer-credit a {
+  color: var(--text-primary);
+  font-weight: 500;
+  transition: color var(--t-fast);
+  text-decoration: none;
+}
+
+.footer-credit a:hover {
+  color: var(--pink);
+}
+
+.footer-heart {
+  color: var(--pink);
+  font-size: 0.8rem;
+  display: inline-block;
+  animation: heartbeat 2s infinite;
+}
+
+.footer-credit-sub {
+  color: var(--text-secondary);
+  font-size: 0.7rem;
+}
+
+@keyframes heartbeat {
+  0% { transform: scale(1); }
+  5% { transform: scale(1.1); }
+  10% { transform: scale(1); }
+  15% { transform: scale(1.1); }
+  50% { transform: scale(1); }
+  100% { transform: scale(1); }
+}
+
 /* ── LIGHTBOX ────────────────────────────────────────────────────────────── */
 .lightbox {
   position: fixed;

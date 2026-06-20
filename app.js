@@ -64,7 +64,9 @@ const i18n = {
         footer_copy: "&copy; 2026 Angelly Parra Photography. Todos los derechos reservados.",
         lb_camera: "Categoría",
         lb_settings: "Iluminación",
-        lb_concept: "Concepto"
+        lb_concept: "Concepto",
+        service_areas_title: "Zonas de Cobertura",
+        service_areas_desc: "Ofreciendo servicios de fotografía profesional en Castellón de la Plana, Vila-real, Benicàssim, Burriana, Almassora, Onda, Oropesa del Mar, Valencia y toda la Comunidad Valenciana."
     },
     en: {
         cursor_view: "View",
@@ -122,7 +124,9 @@ const i18n = {
         footer_copy: "&copy; 2026 Angelly Parra Photography. All rights reserved.",
         lb_camera: "Category",
         lb_settings: "Lighting",
-        lb_concept: "Concept"
+        lb_concept: "Concept",
+        service_areas_title: "Service Areas",
+        service_areas_desc: "Offering professional photography services in Castellón de la Plana, Vila-real, Benicàssim, Burriana, Almassora, Onda, Oropesa del Mar, Valencia, and the entire Valencian Community."
     }
 };
 
@@ -146,8 +150,12 @@ function setLanguage(lang) {
         }
     });
 
-    // Translate dynamic categories if necessary
-    // Here we mainly rely on data attributes, but we can do it if needed
+    // Update Document Title for SEO/AIO multi-language support
+    if (lang === "es") {
+        document.title = "Angelly Parra | Fotógrafa en Castellón — Bodas, 15 Años y Eventos";
+    } else {
+        document.title = "Angelly Parra | Professional Photographer in Castellón — Weddings, Sweet 15s & Events";
+    }
 }
 
 // ─── PORTFOLIO DATA (Simulated High-End Imagery) ──────────────────────────

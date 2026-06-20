@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://angelly-parra-photographer.vercel.app/sitemap.xml

@@ -1223,95 +1223,73 @@ body.cursor-hidden .cursor-follower { opacity: 0; }
 .lightbox-content {
   position: relative;
   z-index: 1;
-  width: 90vw;
-  max-width: 1100px;
-  max-height: 90vh;
+  width: 100vw;
+  height: 100vh;
   display: flex;
-  gap: 2.5rem;
+  justify-content: center;
   align-items: center;
 }
 
 .lightbox-image-wrap {
-  flex: 1;
-  max-height: 85vh;
-  overflow: hidden;
-  border-radius: 4px;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   position: relative;
 }
 
 .lightbox-image-wrap img {
   width: 100%;
   height: 100%;
-  max-height: 85vh;
   object-fit: contain;
   transform: scale(0.95);
   transition: transform 0.6s var(--ease-out-expo);
-  touch-action: none; /* Enable JS-driven pinch-to-zoom */
+  touch-action: none;
 }
 
 .lightbox.active .lightbox-image-wrap img { transform: scale(1); }
 
-.lightbox-info {
-  width: 280px;
-  flex-shrink: 0;
+/* Minimalist Overlay */
+.lightbox-overlay {
+  position: absolute;
+  bottom: 2rem;
+  left: 50%;
+  transform: translateX(-50%);
   display: flex;
   flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+  background: rgba(15, 15, 15, 0.75);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  padding: 1rem 2rem;
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  z-index: 3;
+  pointer-events: none;
+}
+
+.lightbox-brand {
+  font-family: var(--font-display);
+  font-size: 1.1rem;
+  color: var(--text-primary);
+  letter-spacing: 0.05em;
+}
+
+.lightbox-category {
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  color: var(--pink);
+  font-weight: 500;
 }
 
 .lightbox-counter {
-  font-family: var(--font-display);
-  font-size: 1.2rem;
-  color: var(--pink);
-  margin-bottom: 1rem;
-  letter-spacing: 0.1em;
-}
-
-.lightbox-info-category {
-  font-size: 0.6rem;
-  font-weight: 600;
-  letter-spacing: 0.25em;
-  text-transform: uppercase;
-  color: var(--pink);
-  margin-bottom: 0.8rem;
-}
-
-.lightbox-info-title {
-  font-family: var(--font-display);
-  font-size: 1.8rem;
-  font-weight: 400;
-  color: var(--text-primary);
-  margin-bottom: 0.5rem;
-}
-
-.lightbox-info-subtitle {
-  font-size: 0.85rem;
-  color: var(--text-secondary);
-  margin-bottom: 2rem;
-}
-
-.lightbox-info-divider {
-  width: 2rem;
-  height: 1px;
-  background: var(--pink);
-  margin-bottom: 1.5rem;
-}
-
-.lightbox-info-detail {
-  margin-bottom: 1rem;
-}
-
-.lightbox-info-detail-label {
-  font-size: 0.6rem;
-  font-weight: 600;
-  letter-spacing: 0.15em;
-  text-transform: uppercase;
+  font-size: 0.75rem;
   color: var(--text-muted);
-  margin-bottom: 0.2rem;
-}
-
-.lightbox-info-detail-value {
-  font-size: 0.85rem;
-  color: var(--text-secondary);
+  letter-spacing: 0.1em;
+  margin-top: 0.2rem;
 }
 
 .lightbox-close {
@@ -1419,59 +1397,6 @@ body.cursor-hidden .cursor-follower { opacity: 0; }
   .header-actions { gap: 1.5rem; }
   .header-nav-links { display: none; }
   .hamburger { display: flex; }
-
-  /* Lightbox: fullscreen photo-first on touch devices */
-  .lightbox-content {
-    width: 100vw;
-    max-width: 100vw;
-    max-height: 100vh;
-    height: 100vh;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 0;
-    padding: 0;
-  }
-
-  .lightbox-image-wrap {
-    flex: 1;
-    width: 100%;
-    max-height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 0;
-    overflow: hidden;
-  }
-
-  .lightbox-image-wrap img {
-    width: 100%;
-    height: 100%;
-    max-height: 100vh;
-    object-fit: contain;
-  }
-
-  /* Hide the info panel entirely — photo is the star */
-  .lightbox-info {
-    display: none;
-  }
-
-  /* Counter: minimal floating overlay at bottom */
-  .lightbox-counter {
-    position: absolute;
-    bottom: 1.5rem;
-    left: 50%;
-    transform: translateX(-50%);
-    background: rgba(0, 0, 0, 0.6);
-    backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px);
-    padding: 0.4rem 1rem;
-    border-radius: 2rem;
-    font-size: 0.8rem;
-    z-index: 3;
-    color: rgba(255, 255, 255, 0.8);
-    pointer-events: none;
-  }
 }
 
 /* Mobile */

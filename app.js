@@ -61,7 +61,7 @@ const i18n = {
         contact_email: "Correo Electrónico",
         contact_based: "Ubicada en",
         footer_brand: "Fotógrafa",
-        footer_copy: "&copy; 2026 Angelly Parra Photography. Todos los derechos reservados.",
+        footer_copy: "&copy; 2026 Angelly Parra Photographer. Todos los derechos reservados.",
         lb_camera: "Categoría",
         lb_settings: "Iluminación",
         lb_concept: "Concepto",
@@ -121,7 +121,7 @@ const i18n = {
         contact_email: "Email",
         contact_based: "Based in",
         footer_brand: "Photographer",
-        footer_copy: "&copy; 2026 Angelly Parra Photography. All rights reserved.",
+        footer_copy: "&copy; 2026 Angelly Parra Photographer. All rights reserved.",
         lb_camera: "Category",
         lb_settings: "Lighting",
         lb_concept: "Concept",
@@ -1390,18 +1390,15 @@ function updateLightboxContent() {
     if(lightboxCounter) {
         lightboxCounter.textContent = `${currentImageIndex + 1} / ${portfolioData.length}`;
     }
-    document.getElementById("lbCategory").textContent = formatCategory(data.category);
-    document.getElementById("lbTitle").textContent = data.title;
-    document.getElementById("lbSubtitle").textContent = data.subtitle;
+    const lbCategory = document.getElementById("lbCategory");
+    if(lbCategory) {
+        lbCategory.textContent = formatCategory(data.category);
+    }
     
-    document.getElementById("lbCamera").textContent = data.metadata.camera;
-    document.getElementById("lbSettings").textContent = data.metadata.settings;
-    document.getElementById("lbConcept").textContent = data.metadata.concept;
-    
-    // Animate info details
-    gsap.fromTo("#lightboxInfo > *", 
-        { y: 20, opacity: 0 },
-        { y: 0, opacity: 1, duration: 0.6, stagger: 0.05, ease: "power2.out", overwrite: true }
+    // Animate overlay details
+    gsap.fromTo(".lightbox-overlay > *", 
+        { y: 10, opacity: 0 },
+        { y: 0, opacity: 1, duration: 0.6, stagger: 0.1, ease: "power2.out", overwrite: true, delay: 0.2 }
     );
 }
 

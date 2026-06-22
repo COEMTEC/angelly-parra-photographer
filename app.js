@@ -1646,6 +1646,7 @@ function initAnimations() {
     const stats = document.querySelectorAll(".about-stat-number");
     stats.forEach(stat => {
         const target = parseInt(stat.dataset.count);
+        const suffix = stat.dataset.suffix || "+";
         ScrollTrigger.create({
             trigger: stat,
             start: "top 90%",
@@ -1657,7 +1658,7 @@ function initAnimations() {
                     snap: { innerHTML: 1 },
                     ease: "power2.out",
                     onUpdate: function() {
-                        stat.innerHTML = Math.round(this.targets()[0].innerHTML) + "+";
+                        stat.innerHTML = Math.round(this.targets()[0].innerHTML) + suffix;
                     }
                 });
             }

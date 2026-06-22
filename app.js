@@ -1608,18 +1608,6 @@ function initNavigation() {
 
 // ─── SCROLL ANIMATIONS (GSAP) ─────────────────────────────────────────────
 function initAnimations() {
-    // Parallax Hero Image
-    gsap.to("#heroBgImg", {
-        yPercent: 30,
-        ease: "none",
-        scrollTrigger: {
-            trigger: "#hero",
-            start: "top top",
-            end: "bottom top",
-            scrub: true
-        }
-    });
-
     // Reveal elements on scroll (general .reveal-up)
     const revealElements = document.querySelectorAll(".reveal-up");
     revealElements.forEach(el => {

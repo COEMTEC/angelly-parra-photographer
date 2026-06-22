@@ -1406,11 +1406,13 @@ function updateLightboxContent() {
 }
 
 function nextImage() {
+    if (window._lightboxResetZoom) window._lightboxResetZoom();
     currentImageIndex = (currentImageIndex + 1) % portfolioData.length;
     updateLightboxContent();
 }
 
 function prevImage() {
+    if (window._lightboxResetZoom) window._lightboxResetZoom();
     currentImageIndex = (currentImageIndex - 1 + portfolioData.length) % portfolioData.length;
     updateLightboxContent();
 }
@@ -1431,31 +1433,138 @@ function initLightbox() {
         if (e.key === "ArrowLeft") prevImage();
     });
 
-    // Touch swipe navigation
-    let touchStartX = 0;
-    let touchEndX = 0;
-    
+    // ─── TOUCH: Pinch-to-Zoom + Swipe Navigation ──────────────────────────
     const lightbox = document.getElementById("lightbox");
+    const lightboxImg = document.getElementById("lightboxImage");
     
-    lightbox.addEventListener('touchstart', e => {
-        touchStartX = e.changedTouches[0].screenX;
-    });
+    let currentScale = 1;
+    let currentX = 0;
+    let currentY = 0;
+    let initialPinchDist = 0;
+    let initialScale = 1;
+    let isPinching = false;
     
-    lightbox.addEventListener('touchend', e => {
-        touchEndX = e.changedTouches[0].screenX;
-        handleSwipe();
-    });
+    // Single-touch tracking for swipe & pan
+    let touchStartX = 0;
+    let touchStartY = 0;
+    let touchStartTime = 0;
+    let panStartX = 0;
+    let panStartY = 0;
+    let isPanning = false;
     
-    function handleSwipe() {
-        if (!lightbox.classList.contains("active")) return;
-        const swipeThreshold = 50;
-        if (touchEndX < touchStartX - swipeThreshold) {
-            nextImage(); // Swipe left -> next
-        }
-        if (touchEndX > touchStartX + swipeThreshold) {
-            prevImage(); // Swipe right -> prev
-        }
+    function resetZoom() {
+        currentScale = 1;
+        currentX = 0;
+        currentY = 0;
+        lightboxImg.style.transform = "scale(1) translate(0px, 0px)";
     }
+    
+    // Expose resetZoom for use when changing images
+    window._lightboxResetZoom = resetZoom;
+
+    function getDistance(t1, t2) {
+        const dx = t1.clientX - t2.clientX;
+        const dy = t1.clientY - t2.clientY;
+        return Math.sqrt(dx * dx + dy * dy);
+    }
+
+    function applyTransform() {
+        lightboxImg.style.transform = `scale(${currentScale}) translate(${currentX / currentScale}px, ${currentY / currentScale}px)`;
+    }
+
+    lightboxImg.addEventListener("touchstart", (e) => {
+        if (e.touches.length === 2) {
+            // Pinch start
+            e.preventDefault();
+            isPinching = true;
+            initialPinchDist = getDistance(e.touches[0], e.touches[1]);
+            initialScale = currentScale;
+        } else if (e.touches.length === 1) {
+            touchStartX = e.touches[0].clientX;
+            touchStartY = e.touches[0].clientY;
+            touchStartTime = Date.now();
+            
+            if (currentScale > 1.05) {
+                // If zoomed in, start panning
+                isPanning = true;
+                panStartX = currentX;
+                panStartY = currentY;
+            }
+        }
+    }, { passive: false });
+
+    lightboxImg.addEventListener("touchmove", (e) => {
+        if (e.touches.length === 2 && isPinching) {
+            e.preventDefault();
+            const dist = getDistance(e.touches[0], e.touches[1]);
+            const scale = initialScale * (dist / initialPinchDist);
+            currentScale = Math.min(Math.max(scale, 1), 5); // Clamp 1x-5x
+            
+            if (currentScale <= 1.01) {
+                currentX = 0;
+                currentY = 0;
+            }
+            applyTransform();
+        } else if (e.touches.length === 1 && isPanning && currentScale > 1.05) {
+            e.preventDefault();
+            const dx = e.touches[0].clientX - touchStartX;
+            const dy = e.touches[0].clientY - touchStartY;
+            currentX = panStartX + dx;
+            currentY = panStartY + dy;
+            applyTransform();
+        }
+    }, { passive: false });
+
+    lightboxImg.addEventListener("touchend", (e) => {
+        if (e.touches.length < 2) {
+            isPinching = false;
+        }
+        
+        if (e.touches.length === 0) {
+            // Snap back if scale too close to 1
+            if (currentScale < 1.05) {
+                resetZoom();
+            }
+            
+            // Only handle swipe if NOT zoomed in and it was a quick single-finger gesture
+            if (!isPanning && currentScale <= 1.05) {
+                const touchEndX = e.changedTouches[0].clientX;
+                const dx = touchEndX - touchStartX;
+                const elapsed = Date.now() - touchStartTime;
+                const swipeThreshold = 50;
+
+                if (elapsed < 400 && Math.abs(dx) > swipeThreshold) {
+                    if (dx < -swipeThreshold) {
+                        nextImage();
+                    } else if (dx > swipeThreshold) {
+                        prevImage();
+                    }
+                }
+            }
+            
+            isPanning = false;
+        }
+    });
+
+    // Double-tap to zoom toggle
+    let lastTapTime = 0;
+    lightboxImg.addEventListener("touchend", (e) => {
+        if (e.touches.length > 0) return;
+        const now = Date.now();
+        if (now - lastTapTime < 300) {
+            // Double tap detected
+            e.preventDefault();
+            if (currentScale > 1.05) {
+                resetZoom();
+            } else {
+                currentScale = 2.5;
+                currentX = 0;
+                currentY = 0;
+                applyTransform();
+            }
+        }
+        lastTapTime = now;
+    });
 }
 
 // ─── NAVIGATION & HEADER ──────────────────────────────────────────────────
